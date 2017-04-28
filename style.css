@@ -1,0 +1,1457 @@
+body{
+	font-family: Muli;
+	font-size: 8px;
+	color: #eeeeee;
+}
+
+@font-face{
+	font-family:'Droidiga';
+	src: url('fonts/Droidiga.otf');
+
+	font-family:'Zekton';
+	src: url('fonts/zekton rg.ttf');
+
+	font-family:'Copasetic';
+	src: url('fonts/COPASETI.ttf');
+
+	font-family:'Breamcatcher';
+	src: url('fonts/breamcatcher.ttf');
+}
+
+a{
+	text-decoration: none;
+}
+
+h2{
+	font-size:30px;
+	position:relative;
+	bottom:260px;
+	border-bottom: 3px solid white;
+}
+
+nav a{
+	list-style: none;
+	position:fixed;
+	color:white;
+	font-size: 18px;
+	z-index: 998;
+	margin-top:10px;
+	margin-left:20px;
+	text-decoration: underline;
+}
+
+
+#tool-tip{
+	position:relative;
+	top:70px;
+	font-size:22px;
+	animation-delay: 1s;
+}
+
+#arrows{
+	animation-delay: 1s;	
+}
+
+#desc{
+	position:relative;
+	bottom:95px;
+}
+
+#Mars{
+	font-family: Droidiga;
+	color:#ef4a3e;
+	font-size:56px;
+}
+
+#Mars-Text{
+	font-family: Droidiga;
+	color:#ef4a3e;
+	position:relative;
+	right:3px;
+	bottom:50px;
+	font-size:18px;
+}
+
+
+#Jupiter{
+	font-family: Zekton;
+	color:#f8e6bf;
+}
+
+#Jupiter-Text{
+	font-family: Zekton;
+	color:#f8e6bf;
+	position:relative;
+	right:2px;
+	bottom:46px;
+	font-size:22px;
+}
+
+#Saturn{
+	font-family: Copasetic;
+	color:#ddcbaf;
+	font-size:54px;
+}
+
+#Saturn-Text{
+	font-family: Copasetic;
+	color:#ddcbaf;
+	position:relative;
+	right:0px;
+	bottom:43px;
+	font-size:22px;
+}
+
+
+#Uranus{
+	font-family: Breamcatcher;
+	color:#50a9cc;
+	font-size:54px;
+}
+
+#Uranus-Text{
+	font-family: Breamcatcher;
+	color:#50a9cc;
+	position:relative;
+	right:0px;
+	bottom:35px;
+	font-size:32px;
+}
+
+.fp-tableCell{
+	background-color:#202024;
+}
+
+.section .slide-one > .fp-tableCell{
+	background-image: url('images/stars0.png');
+}
+
+.section .slide-two > .fp-tableCell{
+	background-image: url('images/stars.png');
+}
+
+.section .slide-three > .fp-tableCell{
+	background-image: url('images/stars2.png');
+}
+
+.section .slide-four > .fp-tableCell{
+	background-image: url('images/stars3.png');
+}
+
+.section .slide-five > .fp-tableCell{
+	background-image: url('images/stars4.png');
+}
+.section .slide-six > .fp-tableCell{
+	background-image: url('images/stars0.png');
+}
+
+.section .slide-seven > .fp-tableCell{
+	background-image: url('images/stars.png');
+}
+
+.section .slide-eight > .fp-tableCell{
+	background-image: url('images/stars2.png');
+}
+
+.section .slide-nine > .fp-tableCell{
+	background-image: url('images/stars3.png');
+}
+
+.section .slide-ten > .fp-tableCell{
+	background-image: url('images/stars4.png');
+}
+
+
+/* ---------------- MARS ANIMATIONS ---------------- */
+
+.section .slide-two > .fp-tableCell img,
+.section .slide-two > .fp-tableCell span {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active .slide-two.active > .fp-tableCell img,
+.section.active .slide-two.active > .fp-tableCell span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active .slide-two.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+.section.active .slide-two.active > .fp-tableCell span {
+	transition-delay: .44s;
+}
+
+
+/* ---------------- JUPITER ANIMATIONS ---------------- */
+
+.section .slide-three > .fp-tableCell img,
+.section .slide-three > .fp-tableCell span{
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active .slide-three.active > .fp-tableCell img,
+.section.active .slide-three.active > .fp-tableCell span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active .slide-three.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+.section.active .slide-three.active > .fp-tableCell span {
+	transition-delay: .44s;
+}
+
+
+/* ---------------- SATURN ANIMATIONS ---------------- */
+
+.section .slide-four > .fp-tableCell img,
+.section .slide-four > .fp-tableCell span {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active .slide-four.active > .fp-tableCell img,
+.section.active .slide-four.active > .fp-tableCell span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active .slide-four.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+.section.active .slide-four.active > .fp-tableCell span {
+	transition-delay: .44s;
+}
+
+/* ---------------- URANUS ANIMATIONS ---------------- */
+
+.section .slide-five > .fp-tableCell img,
+.section .slide-five > .fp-tableCell span {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active .slide-five.active > .fp-tableCell img,
+.section.active .slide-five.active > .fp-tableCell span {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active .slide-five.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+.section.active .slide-five.active > .fp-tableCell span {
+	transition-delay: .44s;
+}
+
+/* ---------------- SOLAR SYSTEM ---------------- */
+
+.system {
+  margin: 0 auto;
+  position: relative;
+  bottom:55px;
+}
+
+.system:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  top: -2px;
+  background: white;
+  border-radius: 100px;
+}
+
+.system div {
+  border-radius: 1000px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 999;
+}
+.system div:not(.sun) {
+  border: 1px solid rgba(102, 166, 229, 0.12);
+}
+.system div:not(.sun):before {
+  left: 50%;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+}
+.system div:not(.asteroids-belt):before {
+  box-shadow: inset 0 6px 0 -2px rgba(0, 0, 0, 0.25);
+}
+
+.sun {
+  background-color:yellow;
+  height: 65px;
+  width: 65px;
+  margin-top: -32.5px;
+  margin-left: -32.5px;
+  background-clip: padding-box;
+  border: 0 !important;
+  background-position: -28px -103px;
+  background-size: 175%;
+  box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.4), 0 0 22px 11px rgba(255, 203, 0, 0.13);
+}
+
+.mercuryplanet {
+  height: 110px;
+  width: 110px;
+  margin-top: -55px;
+  margin-left: -55px;
+  -webkit-animation: orb 7.18673s linear infinite;
+          animation: orb 7.18673s linear infinite;
+}
+.mercuryplanet:before {
+  height: 5px;
+  width: 5px;
+  background: #9f5e26;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.venusplanet {
+  height: 135px;
+  width: 135px;
+  margin-top: -68px;
+  margin-left: -68px;
+  -webkit-animation: orb 18.45553s linear infinite;
+          animation: orb 18.45553s linear infinite;
+}
+.venusplanet:before {
+  height: 9px;
+  width: 9px;
+  background: #BEB768;
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+.earthplanet {
+  height: 167px;
+  width: 167px;
+  margin-top: -83.5px;
+  margin-left: -83.5px;
+  -webkit-animation: orb 30s linear infinite;
+          animation: orb 30s linear infinite;
+}
+.earthplanet:before {
+  height: 10px;
+  width: 10px;
+  background: #11abe9;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+
+.marssystemplanet {
+  height: 220px;
+  width: 220px;
+  margin-top: -110px;
+  margin-left: -110px;
+  -webkit-animation: orb 56.42613s linear infinite;
+          animation: orb 56.42613s linear infinite;
+}
+.marssystemplanet:before {
+  height: 8px;
+  width: 8px;
+  background: #cf3921;
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.asteroids-belt {
+  opacity: .7;
+  border-color: transparent !important;
+  height: 300px;
+  width: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  -webkit-animation: orb 179.95583s linear infinite;
+          animation: orb 179.95583s linear infinite;
+  overflow: hidden;
+}
+
+.asteroids-belt:before {
+  top: 50%;
+  height: 210px;
+  width: 210px;
+  margin-left: -105px;
+  margin-top: -105px;
+  background: transparent;
+  border-radius: 140px !important;
+  box-shadow: -47px -83px 0 -104px rgba(255, 255, 255, 0.439) , 53px -23px 0 -104px rgba(255,255,255, 0.442) , 132px -121px 0 -104px rgba(255,255,255, 0.764) , 98px -58px 0 -104px rgba(255,255,255, 0.492) , -68px -74px 0 -104px rgba(255,255,255, 0.454) , -103px 24px 0 -104px rgba(255,255,255, 0.383) , -71px -103px 0 -104px rgba(255,255,255, 0.657) , -86px 138px 0 -104px rgba(255,255,255, 0.431) , 136px -10px 0 -104px rgba(255,255,255, 0.789) , 43px -48px 0 -104px rgba(255,255,255, 0.24) , 87px 58px 0 -104px rgba(255,255,255, 0.355) , -19px 95px 0 -104px rgba(255,255,255, 0.177) , -88px -40px 0 -104px rgba(255,255,255, 0.189) , 9px 97px 0 -104px rgba(255,255,255, 0.74) , 68px -87px 0 -104px rgba(255,255,255, 0.83) , 131px -30px 0 -104px rgba(255,255,255, 0.327) , -118px 63px 0 -104px rgba(255,255,255, 0.808) , -102px 140px 0 -104px rgba(255,255,255, 0.208) , 91px 129px 0 -104px rgba(255,255,255, 0.917) , -71px 89px 0 -104px rgba(255,255,255, 0.336) , 12px 137px 0 -104px rgba(255,255,255, 0.657) , 135px 123px 0 -104px rgba(255,255,255, 0.732) , 137px -141px 0 -104px rgba(255,255,255, 0.592) , -131px 98px 0 -104px rgba(255,255,255, 0.223) , 13px -26px 0 -104px rgba(255,255,255, 0.232) , 21px -67px 0 -104px rgba(255,255,255, 0.509) , -127px -85px 0 -104px rgba(255,255,255, 0.175) , -85px -9px 0 -104px rgba(255,255,255, 0.284) , -46px 91px 0 -104px rgba(255,255,255, 0.803) , -46px 143px 0 -104px rgba(255,255,255, 0.551) , 54px 9px 0 -104px rgba(255,255,255, 0.639) , 49px 141px 0 -104px rgba(255,255,255, 0.334) , -73px -123px 0 -104px rgba(255,255,255, 0.179) , 119px 125px 0 -104px rgba(255,255,255, 0.691) , 64px -68px 0 -104px rgba(255,255,255, 0.842) , -45px 74px 0 -104px rgba(255,255,255, 0.71) , 38px 41px 0 -104px rgba(255,255,255, 0.799) , -54px -53px 0 -104px rgba(255,255,255, 0.893) , -39px -52px 0 -104px rgba(255,255,255, 0.168) , 75px 66px 0 -104px rgba(255,255,255, 0.882) , -5px -110px 0 -104px rgba(255,255,255, 0.129) , 3px 48px 0 -104px rgba(255,255,255, 0.279) , -113px 135px 0 -104px rgba(255,255,255, 0.241) , 13px 54px 0 -104px rgba(255,255,255, 0.453) , -84px 5px 0 -104px rgba(255,255,255, 0.207) , 83px 139px 0 -104px rgba(255,255,255, 0.01) , 43px -54px 0 -104px rgba(255,255,255, 0.227) , 67px -102px 0 -104px rgba(255,255,255, 0.96) , -92px -46px 0 -104px rgba(255,255,255, 0.373) , -15px -72px 0 -104px rgba(255,255,255, 0.967) , 95px -6px 0 -104px rgba(255,255,255, 0.783) , 7px 114px 0 -104px rgba(255,255,255, 0.034) , 58px -120px 0 -104px rgba(255,255,255, 0.898) , 119px -21px 0 -104px rgba(255,255,255, 0.795) , -79px -103px 0 -104px rgba(255,255,255, 0.967) , -64px 55px 0 -104px rgba(255,255,255, 0.55) , 102px 145px 0 -104px rgba(255,255,255, 0.776) , 28px -69px 0 -104px rgba(255,255,255, 0.656) , 15px 24px 0 -104px rgba(255,255,255, 0.066) , -68px 107px 0 -104px rgba(255,255,255, 0.132) , -92px -24px 0 -104px rgba(255,255,255, 0.572) , 107px -106px 0 -104px rgba(255,255,255, 0.236) , -140px 128px 0 -104px rgba(255,255,255, 0.47) , 139px 141px 0 -104px rgba(255,255,255, 0.608) , -34px -131px 0 -104px rgba(255,255,255, 0.611) , 121px -26px 0 -104px rgba(255,255,255, 0.2) , 28px -20px 0 -104px rgba(255,255,255, 0.101) , 119px -92px 0 -104px rgba(255,255,255, 0.732) , -42px -8px 0 -104px rgba(255,255,255, 0.866) , -144px 38px 0 -104px rgba(255,255,255, 0.423) , -95px -32px 0 -104px rgba(255,255,255, 0.886) , 58px -49px 0 -104px rgba(255,255,255, 0.627) , 38px -79px 0 -104px rgba(255,255,255, 0.004) , -42px -62px 0 -104px rgba(255,255,255, 0.25) , -2px 61px 0 -104px rgba(255,255,255, 0.807) , -111px -83px 0 -104px rgba(255,255,255, 0.012) , 109px 87px 0 -104px rgba(255,255,255, 0.984) , 9px -28px 0 -104px rgba(255,255,255, 0.197) , -70px -32px 0 -104px rgba(255,255,255, 0.334) , -65px 47px 0 -104px rgba(255,255,255, 0.341) , 33px 78px 0 -104px rgba(255,255,255, 0.623) , -9px -13px 0 -104px rgba(255,255,255, 0.318) , -72px 12px 0 -104px rgba(255,255,255, 0.59) , 22px -116px 0 -104px rgba(255,255,255, 0.023) , -109px -88px 0 -104px rgba(255,255,255, 0.106) , 2px -34px 0 -104px rgba(255,255,255, 0.882) , 66px -25px 0 -104px rgba(255,255,255, 0.587) , -5px 54px 0 -104px rgba(255,255,255, 0.705) , 43px -28px 0 -104px rgba(255,255,255, 0.664) , -133px -30px 0 -104px rgba(255,255,255, 0.226) , 71px 110px 0 -104px rgba(255,255,255, 0.343) , -20px 123px 0 -104px rgba(255,255,255, 0.926) , -108px 44px 0 -104px rgba(255,255,255, 0.216) , 140px 20px 0 -104px rgba(255,255,255, 0.789) , 81px -28px 0 -104px rgba(255,255,255, 0.585) , -37px 7px 0 -104px rgba(255,255,255, 0.104) , -143px 38px 0 -104px rgba(255,255,255, 0.203) , 134px -70px 0 -104px rgba(255,255,255, 0.157) , 117px 121px 0 -104px rgba(255,255,255, 0.925) , -92px 94px 0 -104px rgba(255,255,255, 0.974) , 81px 45px 0 -104px rgba(255,255,255, 0.954) , -86px 62px 0 -104px rgba(255,255,255, 0.628) , 46px -133px 0 -104px rgba(255,255,255, 0.295) , -18px -74px 0 -104px rgba(255,255,255, 0.1) , -62px -68px 0 -104px rgba(255,255,255, 0.308) , 85px 97px 0 -104px rgba(255,255,255, 0.836) , 120px 20px 0 -104px rgba(255,255,255, 0.556) , -122px -69px 0 -104px rgba(255,255,255, 0.105) , 115px 106px 0 -104px rgba(255,255,255, 0.648) , -46px 44px 0 -104px rgba(255,255,255, 0.503) , 0px 108px 0 -104px rgba(255,255,255, 0.951) , -15px 121px 0 -104px rgba(255,255,255, 0.541) , -77px 73px 0 -104px rgba(255,255,255, 0.932) , -55px -81px 0 -104px rgba(255,255,255, 0.541) , 137px -52px 0 -104px rgba(255,255,255, 0.119) , -132px -125px 0 -104px rgba(255,255,255, 0.763) , -130px -85px 0 -104px rgba(255,255,255, 0.7) , 35px -99px 0 -104px rgba(255,255,255, 0.59) , 59px 80px 0 -104px rgba(255,255,255, 0.182) , -117px 128px 0 -104px rgba(255,255,255, 0.56) , 38px 116px 0 -104px rgba(255,255,255, 0.309) , 84px 56px 0 -104px rgba(255,255,255, 0.391) , -13px -128px 0 -104px rgba(255,255,255, 0.327) , -67px 136px 0 -104px rgba(255,255,255, 0.743) , -84px 31px 0 -104px rgba(255,255,255, 0.143) , 42px -10px 0 -104px rgba(255,255,255, 0.193) , 118px -103px 0 -104px rgba(255,255,255, 0.93) , -40px 115px 0 -104px rgba(255,255,255, 0.607) , -37px 19px 0 -104px rgba(255,255,255, 0.843) , -122px 106px 0 -104px rgba(255,255,255, 0.288) , 98px 100px 0 -104px rgba(255,255,255, 0.07) , 137px -102px 0 -104px rgba(255,255,255, 0.091) , -23px -80px 0 -104px rgba(255,255,255, 0.485) , 55px 80px 0 -104px rgba(255,255,255, 0.507) , -116px -86px 0 -104px rgba(255,255,255, 0.235) , -9px 63px 0 -104px rgba(255,255,255, 0.481) , 24px -16px 0 -104px rgba(255,255,255, 0.406) , -140px 61px 0 -104px rgba(255,255,255, 0.045) , -11px -96px 0 -104px rgba(255,255,255, 0.148) , -115px 128px 0 -104px rgba(255,255,255, 0.085) , 19px 68px 0 -104px rgba(255,255,255, 0.2) , -16px 145px 0 -104px rgba(255,255,255, 0.529) , 132px 110px 0 -104px rgba(255,255,255, 0.503) , 45px 63px 0 -104px rgba(255,255,255, 0.708) , 62px -41px 0 -104px rgba(255,255,255, 0.27) , -139px -37px 0 -104px rgba(255,255,255, 0.315) , -119px 60px 0 -104px rgba(255,255,255, 0.586) , -4px 43px 0 -104px rgba(255,255,255, 0.973) , -26px -104px 0 -104px rgba(255,255,255, 0.49) , -112px -28px 0 -104px rgba(255,255,255, 0.372) , -10px -133px 0 -104px rgba(255,255,255, 0.779) , -142px -77px 0 -104px rgba(255,255,255, 0.104) , 20px 103px 0 -104px rgba(255,255,255, 0.79) , -48px 40px 0 -104px rgba(255,255,255, 0.325) , -51px 89px 0 -104px rgba(255,255,255, 0.043) , -83px 13px 0 -104px rgba(255,255,255, 0.701) , 40px -51px 0 -104px rgba(255,255,255, 0.191) , -88px 143px 0 -104px rgba(255,255,255, 0.394) , 20px -14px 0 -104px rgba(255,255,255, 0.503) , -71px -143px 0 -104px rgba(255,255,255, 0.334) , -86px -22px 0 -104px rgba(255,255,255, 0.489) , 111px 116px 0 -104px rgba(255,255,255, 0.858) , -35px -130px 0 -104px rgba(255,255,255, 0.35) , -70px -16px 0 -104px rgba(255,255,255, 0.083) , 132px -107px 0 -104px rgba(255,255,255, 0.588) , 36px 81px 0 -104px rgba(255,255,255, 0.839) , -61px -31px 0 -104px rgba(255,255,255, 0.608) , 27px 26px 0 -104px rgba(255,255,255, 0.329) , 110px -132px 0 -104px rgba(255,255,255, 0.63) , 22px -14px 0 -104px rgba(255,255,255, 0.868) , 63px 133px 0 -104px rgba(255,255,255, 0.743) , -51px 121px 0 -104px rgba(255,255,255, 0.272) , -46px 11px 0 -104px rgba(255,255,255, 0.696) , 4px 89px 0 -104px rgba(255,255,255, 0.77) , -117px 84px 0 -104px rgba(255,255,255, 0.558) , -22px 68px 0 -104px rgba(255,255,255, 0.631) , 52px -135px 0 -104px rgba(255,255,255, 0.524) , -71px 112px 0 -104px rgba(255,255,255, 0.712) , -78px -132px 0 -104px rgba(255,255,255, 0.053) , -100px -93px 0 -104px rgba(255,255,255, 0.233) , 16px 56px 0 -104px rgba(255,255,255, 0.594) , -93px -94px 0 -104px rgba(255,255,255, 0.283) , -3px -101px 0 -104px rgba(255,255,255, 0.35) , -123px -111px 0 -104px rgba(255,255,255, 0.235) , 12px -129px 0 -104px rgba(255,255,255, 0.503) , 58px 112px 0 -104px rgba(255,255,255, 0.472) , 40px 28px 0 -104px rgba(255,255,255, 0.85) , 17px -53px 0 -104px rgba(255,255,255, 0.842) , 89px 59px 0 -104px rgba(255,255,255, 0.853) , -4px -9px 0 -104px rgba(255,255,255, 0.97) , 18px -61px 0 -104px rgba(255,255,255, 0.417) , -95px -112px 0 -104px rgba(255,255,255, 0.868) , 127px 110px 0 -104px rgba(255,255,255, 0.093) , -10px -71px 0 -104px rgba(255,255,255, 0.501) , 65px -97px 0 -104px rgba(255,255,255, 0.583) , 55px 2px 0 -104px rgba(255,255,255, 0.288) , 86px 106px 0 -104px rgba(255,255,255, 0.621) , -15px 121px 0 -104px rgba(255,255,255, 0.828) , 55px 135px 0 -104px rgba(255,255,255, 0.2) , -53px 109px 0 -104px rgba(255,255,255, 0.353) , 44px -110px 0 -104px rgba(255,255,255, 0.422) , 67px -80px 0 -104px rgba(255,255,255, 0.207) , -71px 108px 0 -104px rgba(255,255,255, 0.326) , 41px -117px 0 -104px rgba(255,255,255, 0.025) , 92px 77px 0 -104px rgba(255,255,255, 0.681) , -6px -27px 0 -104px rgba(255,255,255, 0.972) , -54px -70px 0 -104px rgba(255,255,255, 0.007) , 122px -65px 0 -104px rgba(255,255,255, 0.425) , 75px -131px 0 -104px rgba(255,255,255, 0.467) , -115px -121px 0 -104px rgba(255,255,255, 0.869) , 36px -36px 0 -104px rgba(255,255,255, 0.059) , -124px -10px 0 -104px rgba(255,255,255, 0.831) , 1px 81px 0 -104px rgba(255,255,255, 0.041) , 94px -74px 0 -104px rgba(255,255,255, 0.794) , -95px -105px 0 -104px rgba(255,255,255, 0.676) , -136px 94px 0 -104px rgba(255,255,255, 0.584) , -62px 87px 0 -104px rgba(255,255,255, 0.388) , 8px 60px 0 -104px rgba(255,255,255, 0.603) , 21px 36px 0 -104px rgba(255,255,255, 0.814) , -61px 116px 0 -104px rgba(255,255,255, 0.051) , -23px -119px 0 -104px rgba(255,255,255, 0.226) , -71px -110px 0 -104px rgba(255,255,255, 0.619) , -138px -29px 0 -104px rgba(255,255,255, 0.043) , 121px -39px 0 -104px rgba(255,255,255, 0.837) , 52px -115px 0 -104px rgba(255,255,255, 0.65) , -99px 123px 0 -104px rgba(255,255,255, 0.412) , -1px -135px 0 -104px rgba(255,255,255, 0.676) , 14px -73px 0 -104px rgba(255,255,255, 0.918) , -130px -33px 0 -104px rgba(255,255,255, 0.001) , 106px 105px 0 -104px rgba(255,255,255, 0.407) , 126px 129px 0 -104px rgba(255,255,255, 0.505) , 39px -113px 0 -104px rgba(255,255,255, 0.728) , -118px 40px 0 -104px rgba(255,255,255, 0.534) , 96px 85px 0 -104px rgba(255,255,255, 0.174) , -117px -27px 0 -104px rgba(255,255,255, 0.153) , 71px -45px 0 -104px rgba(255,255,255, 0.896) , -93px 132px 0 -104px rgba(255,255,255, 0.442) , 140px -136px 0 -104px rgba(255,255,255, 0.935) , 105px 135px 0 -104px rgba(255,255,255, 0.684) , -18px 9px 0 -104px rgba(255,255,255, 0.166) , -141px -83px 0 -104px rgba(255,255,255, 0.972) , 110px 17px 0 -104px rgba(255,255,255, 0.52) , 16px -105px 0 -104px rgba(255,255,255, 0.747) , 35px 40px 0 -104px rgba(255,255,255, 0.193) , -50px -61px 0 -104px rgba(255,255,255, 0.27) , -110px -112px 0 -104px rgba(255,255,255, 0.401) , -78px 72px 0 -104px rgba(255,255,255, 0.054) , 31px -16px 0 -104px rgba(255,255,255, 0.22) , 116px 112px 0 -104px rgba(255,255,255, 0.442) , -36px 131px 0 -104px rgba(255,255,255, 0.37) , 9px -4px 0 -104px rgba(255,255,255, 0.457) , -104px 73px 0 -104px rgba(255,255,255, 0.848) , 95px -123px 0 -104px rgba(255,255,255, 0.139) , -127px -76px 0 -104px rgba(255,255,255, 0.074) , -81px 115px 0 -104px rgba(255,255,255, 0.943) , -28px 25px 0 -104px rgba(255,255,255, 0.135) , 89px 121px 0 -104px rgba(255,255,255, 0.208) , -128px -88px 0 -104px rgba(255,255,255, 0.451) , -86px 43px 0 -104px rgba(255,255,255, 0.161) , 74px -22px 0 -104px rgba(255,255,255, 0.116) , -101px -24px 0 -104px rgba(255,255,255, 0.49) , 136px 46px 0 -104px rgba(255,255,255, 0.094) , 11px -95px 0 -104px rgba(255,255,255, 0.952) , -109px -131px 0 -104px rgba(255,255,255, 0.757) , -21px 100px 0 -104px rgba(255,255,255, 0.955) , 35px -2px 0 -104px rgba(255,255,255, 0.751) , 74px -6px 0 -104px rgba(255,255,255, 0.899) , 6px 56px 0 -104px rgba(255,255,255, 0.179) , 96px 71px 0 -104px rgba(255,255,255, 0.464) , -73px -71px 0 -104px rgba(255,255,255, 0.928) , -121px 65px 0 -104px rgba(255,255,255, 0.579) , -58px 119px 0 -104px rgba(255,255,255, 0.045) , 26px -71px 0 -104px rgba(255,255,255, 0.502) , -4px 33px 0 -104px rgba(255,255,255, 0.263) , -51px -72px 0 -104px rgba(255,255,255, 0.857) , -37px 132px 0 -104px rgba(255,255,255, 0.962) , -81px 60px 0 -104px rgba(255,255,255, 0.732) , -120px 17px 0 -104px rgba(255,255,255, 0.117) , 136px -4px 0 -104px rgba(255,255,255, 0.746) , 5px -48px 0 -104px rgba(255,255,255, 0.511) , 45px -126px 0 -104px rgba(255,255,255, 0.752) , -54px 35px 0 -104px rgba(255,255,255, 0.31) , -30px -71px 0 -104px rgba(255,255,255, 0.12) , -24px -120px 0 -104px rgba(255,255,255, 0.992) , -6px 135px 0 -104px rgba(255,255,255, 0.614) , -5px -122px 0 -104px rgba(255,255,255, 0.05) , -41px -127px 0 -104px rgba(255,255,255, 0.386) , 67px -78px 0 -104px rgba(255,255,255, 0.375) , -27px 31px 0 -104px rgba(255,255,255, 0.914) , -11px 18px 0 -104px rgba(255,255,255, 0.339) , 42px 32px 0 -104px rgba(255,255,255, 0.308) , -77px 116px 0 -104px rgba(255,255,255, 0.411) , -1px 34px 0 -104px rgba(255,255,255, 0.992) , -45px 103px 0 -104px rgba(255,255,255, 0.202) , -72px 141px 0 -104px rgba(255,255,255, 0.429) , -21px -32px 0 -104px rgba(255,255,255, 0.289) , 50px 45px 0 -104px rgba(255,255,255, 0.698) , 111px -134px 0 -104px rgba(255,255,255, 0.468) , -74px -101px 0 -104px rgba(255,255,255, 0.074) , 119px 142px 0 -104px rgba(255,255,255, 0.549) , 113px 115px 0 -104px rgba(255,255,255, 0.006) , -83px -82px 0 -104px rgba(255,255,255, 0.33) , -132px -117px 0 -104px rgba(255,255,255, 0.667) , -70px 118px 0 -104px rgba(255,255,255, 0.059) , 38px 3px 0 -104px rgba(255,255,255, 0.843) , 116px -73px 0 -104px rgba(255,255,255, 0.758) , 31px 64px 0 -104px rgba(255,255,255, 0.777) , -18px 134px 0 -104px rgba(255,255,255, 0.507) , 92px 68px 0 -104px rgba(255,255,255, 0.236) , -129px 144px 0 -104px rgba(255,255,255, 0.468) , 95px -68px 0 -104px rgba(255,255,255, 0.103) , -2px 137px 0 -104px rgba(255,255,255, 0.427) , 67px 126px 0 -104px rgba(255,255,255, 0.872) , -112px -72px 0 -104px rgba(255,255,255, 0.523) , -21px 105px 0 -104px rgba(255,255,255, 0.421) , -10px -23px 0 -104px rgba(255,255,255, 0.343) , 29px 140px 0 -104px rgba(255,255,255, 0.684) , 122px 98px 0 -104px rgba(255,255,255, 0.741) , -124px -31px 0 -104px rgba(255,255,255, 0.771) , 21px -65px 0 -104px rgba(255,255,255, 0.682) , 135px 107px 0 -104px rgba(255,255,255, 0.551) , -112px -39px 0 -104px rgba(255,255,255, 0.998) , -50px -60px 0 -104px rgba(255,255,255, 0.507) , -92px -132px 0 -104px rgba(255,255,255, 0.129) , 16px 19px 0 -104px rgba(255,255,255, 0.316) , -63px 9px 0 -104px rgba(255,255,255, 0.425) , -8px 87px 0 -104px rgba(255,255,255, 0.747) , 125px -24px 0 -104px rgba(255,255,255, 0.171) , -48px 98px 0 -104px rgba(255,255,255, 0.584) , -142px 49px 0 -104px rgba(255,255,255, 0.518) , 52px 26px 0 -104px rgba(255,255,255, 0.179) , 36px 42px 0 -104px rgba(255,255,255, 0.964) , -71px 91px 0 -104px rgba(255,255,255, 0.576) , 7px 18px 0 -104px rgba(255,255,255, 0.117) , 40px 54px 0 -104px rgba(255,255,255, 0.844) , -117px -69px 0 -104px rgba(255,255,255, 0.33) , -30px 35px 0 -104px rgba(255,255,255, 0.735) , 29px 29px 0 -104px rgba(255,255,255, 0.077) , -68px -58px 0 -104px rgba(255,255,255, 0.774) , 83px -103px 0 -104px rgba(255,255,255, 0.516) , 98px -106px 0 -104px rgba(255,255,255, 0.586) , 28px 107px 0 -104px rgba(255,255,255, 0.746) , 119px 130px 0 -104px rgba(255,255,255, 0.048) , -53px 54px 0 -104px rgba(255,255,255, 0.441) , 19px -6px 0 -104px rgba(255,255,255, 0.601) , -37px 121px 0 -104px rgba(255,255,255, 0.423) , 62px -26px 0 -104px rgba(255,255,255, 0.608) , 89px -141px 0 -104px rgba(255,255,255, 0.472) , 124px -115px 0 -104px rgba(255,255,255, 0.05) , 49px 132px 0 -104px rgba(255,255,255, 0.474) , -46px 133px 0 -104px rgba(255,255,255, 0.97) , -34px -1px 0 -104px rgba(255,255,255, 0.387) , 105px -6px 0 -104px rgba(255,255,255, 0.235) , 62px 116px 0 -104px rgba(255,255,255, 0.893) , 121px 4px 0 -104px rgba(255,255,255, 0.407) , 83px 40px 0 -104px rgba(255,255,255, 0.385) , 6px 13px 0 -104px rgba(255,255,255, 0.877) , -29px -67px 0 -104px rgba(255,255,255, 0.568) , 57px -81px 0 -104px rgba(255,255,255, 0.726) , 114px 14px 0 -104px rgba(255,255,255, 0.58) , -84px -82px 0 -104px rgba(255,255,255, 0.136) , 44px -106px 0 -104px rgba(255,255,255, 0.724) , 59px 66px 0 -104px rgba(255,255,255, 0.883) , 118px -111px 0 -104px rgba(255,255,255, 0.824) , -98px -72px 0 -104px rgba(255,255,255, 0.491) , -84px 88px 0 -104px rgba(255,255,255, 0.391) , 137px -141px 0 -104px rgba(255,255,255, 0.379) , 9px -140px 0 -104px rgba(255,255,255, 0.566) , -6px -66px 0 -104px rgba(255,255,255, 0.616) , 16px 124px 0 -104px rgba(255,255,255, 0.553) , -23px -101px 0 -104px rgba(255,255,255, 0.553) , 107px 107px 0 -104px rgba(255,255,255, 0.983) , 114px -27px 0 -104px rgba(255,255,255, 0.069) , 54px 65px 0 -104px rgba(255,255,255, 0.2) , 22px -59px 0 -104px rgba(255,255,255, 0.331) , 89px -5px 0 -104px rgba(255,255,255, 0.094) , 99px -107px 0 -104px rgba(255,255,255, 0.791) , -82px -130px 0 -104px rgba(255,255,255, 0.712) , -115px -127px 0 -104px rgba(255,255,255, 0.659) , 24px -109px 0 -104px rgba(255,255,255, 0.071) , 51px 78px 0 -104px rgba(255,255,255, 0.844) , -87px -72px 0 -104px rgba(255,255,255, 0.381) , 78px 30px 0 -104px rgba(255,255,255, 0.563) , -51px 2px 0 -104px rgba(255,255,255, 0.283) , 76px -112px 0 -104px rgba(255,255,255, 0.926) , 75px -115px 0 -104px rgba(255,255,255, 0.772) , 24px -73px 0 -104px rgba(255,255,255, 0.9) , 67px 9px 0 -104px rgba(255,255,255, 0.752) , 42px -118px 0 -104px rgba(255,255,255, 0.954) , 3px -94px 0 -104px rgba(255,255,255, 0.069);
+}
+
+
+@-webkit-keyframes orb {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes orb {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+.section .slide-one .fp-tableCell > .system {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active .slide-one.active .fp-tableCell > .system {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active .slide-one.active .fp-tableCell > .system {
+	transition-delay: .22s;
+}
+
+#phobos{
+	position:fixed; 
+	width:35px; 
+	bottom:350px; 
+	margin-left:-250px;
+}
+
+#phobos-text{
+	position:fixed; 
+	width:35px; 
+	bottom:310px; 
+	margin-left:-263px; 
+	font-size:18px;
+}
+
+#deimos{
+	position:fixed; 
+	width:35px; 
+	bottom:350px; 
+	margin-left:240px;
+}
+
+#deimos-text{
+	position:fixed; 
+	width:35px; 
+	bottom:310px; 
+	margin-left:230px; 
+	font-size:18px;
+}
+
+#mars-seasons{
+	position: relative;
+}
+
+#mars-seasons-title{
+	position: relative;
+	z-index: 5;
+}
+
+#Power_scene{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+#mars-seasons > .fp-tableCell{
+	background-image: none;
+	background-color: #c66861;
+}
+
+#Power_symbol{
+	opacity: 0;
+	-webkit-animation:beams 3s ease-in-out infinite;
+    -moz-animation:beams 3s ease-in-out infinite;
+    -o-animation:beams 3s ease-in-out infinite;
+    animation:beams 3s ease-in-out infinite;
+}
+
+#power-text{
+	opacity: 0;
+	-webkit-animation:beams 3s ease-in-out infinite;
+    -moz-animation:beams 3s ease-in-out infinite;
+    -o-animation:beams 3s ease-in-out infinite;
+    animation:beams 3s ease-in-out infinite;
+}
+}
+
+@keyframes beams {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{opacity: 0;}
+}
+
+#lander-scene{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+#Sun{
+	-webkit-animation:pulse 3s ease-in-out infinite;
+    -moz-animation:pulse 3s ease-in-out infinite;
+    -o-animation:pulse 3s ease-in-out infinite;
+    animation:pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse{
+	-webkit-transform: scale3d(1, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+
+#beam1,#beam2,#beam3,#beam4,#beam5,#beam6,#beam7,#beam8,#beam9 {
+	opacity: 0;
+	-webkit-animation:beams 3s ease-in-out infinite;
+    -moz-animation:beams 3s ease-in-out infinite;
+    -o-animation:beams 3s ease-in-out infinite;
+    animation:beams 3s ease-in-out infinite;
+}
+
+@keyframes beams {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100%{opacity: 0;}
+}
+-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+
+#beam1{
+	animation-delay: .1s;
+}
+
+#beam2{
+	animation-delay:.2s;
+}
+
+#beam3{
+	animation-delay:.4s;
+}
+
+#beam4{
+	animation-delay:.6s;
+}
+
+#beam5{
+	animation-delay:.8s;
+}
+
+#beam6{
+	animation-delay:.9s;
+}
+
+#beam7{
+	animation-delay:1s;
+}
+
+#beam8{
+	animation-delay:1.1s;
+}
+
+#beam9{
+	animation-delay:1.2s;
+}
+
+#lander-mission{
+	background-image: url("images/rover.svg");
+	position: relative;
+}
+
+#lander-mission > .fp-tableCell{
+	background-image: none;
+	background-color: #c66861;
+}
+
+#lander-mission-title{
+	position: relative;
+	top:-200px;
+}
+
+
+#babylonians{
+	position: relative;
+}
+
+#babylonians > .fp-tableCell{
+	background-image: url('images/babylonians1.png');
+	background-size: 100%;
+	background-repeat: none;
+	background-position: bottom;
+	background-color:rgba(0,0,0,0);
+}
+
+img#baby-jup{
+	position:absolute;
+	width:100px;
+	left:850px;
+	bottom:400px;
+	animation-delay: .5s;
+	animation-duration: 1s;
+}
+
+#shortest{
+	top:-225px;
+}
+
+#jupiter-speed, #saturn-speed, #uranus-speed, #neptune-speed{
+	position:absolute;
+}
+
+#jupiter-speed{
+	position:relative;
+	top:200px;
+	margin-top:-2250px;
+}
+
+#saturn-speed{
+	position:relative;
+	top:200px;
+	margin-top:-2250px;
+}
+
+#uranus-speed{
+	position:relative;
+	top:200px;
+	margin-top:-2250px;
+}
+
+#neptune-speed{
+	position:relative;
+	top:200px;
+	margin-top:-2250px;
+}
+
+#largest{
+	position: relative;
+}
+
+#large-jupiter{
+	position:absolute;
+	width:400px;
+	left:400px;
+	top:200px;
+}
+
+#earth-size{
+	position: absolute;
+	width:40px;
+	left:800px;
+	top:500px;
+}
+
+#asteroid-field{
+	position:relative;
+}
+
+.asteroids{
+	position:absolute;
+}
+
+#asteroid1{
+	position:absolute;
+	width:65px;
+	top:250px;
+	left:200px;
+	-webkit-animation:rotate 4s linear infinite;
+    -moz-animation:rotate 4s linear infinite;
+    -o-animation:rotate 4s linear infinite;
+    animation:rotate 4s linear infinite;
+}
+
+#asteroid2{
+	position:absolute;
+	top:350px;
+	right:200px;
+	-webkit-animation:movementone 10s ease-in-out infinite;
+    -moz-animation:movementone 10s ease-in-out infinite;
+    -o-animation:movementone 10s ease-in-out infinite;
+    animation:movementone 10s ease-in-out infinite;
+}
+
+#asteroid3{
+	position:absolute;
+	top:150px;
+	left:550px;
+	-webkit-animation:rotate 17s linear infinite;
+    -moz-animation:rotate 17s linear infinite;
+    -o-animation:rotate 17s linear infinite;
+    animation:rotate 17s linear infinite;
+}
+
+#asteroid4{
+	position:absolute;
+	top:350px;
+	left:350px;
+	-webkit-animation:movementtwo 17s ease-in-out infinite;
+    -moz-animation:movementtwo 17s ease-in-out infinite;
+    -o-animation:movementtwo 17s ease-in-out infinite;
+    animation:movementtwo 17s ease-in-out infinite;
+}
+
+#asteroid5{
+	position:absolute;
+	top:550px;
+	right:550px;
+	-webkit-animation:movementthree 17s ease-in-out infinite;
+    -moz-animation:movementthree 17s ease-in-out infinite;
+    -o-animation:movementthree 17s ease-in-out infinite;
+    animation:movementthree 17s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatetwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes movementone {
+    0%   {right:200px;}
+    50%  {right:250px;}
+    100% {right:200px;}
+}
+
+@keyframes movementtwo {
+    0%   {left:350px; top:350px;}
+    50%  {left:450px; top:450px;}
+    100% {left:350px; top:350px;}
+}
+
+@keyframes movementthree {
+    0%   {left:550px; top:550px;}
+    50%  {left:450px; top:450px;}
+    100% {left:550px; top:550px;}
+}
+
+#jup-moons{
+	position: relative;
+}
+
+#moons-title{
+	top:-225px;
+}
+
+#ganymede{
+	margin-top: -3350px;
+	position: relative;
+	top:150px;
+}
+
+#ganymede:hover{
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+#mercury-moon{
+	margin-top: -3350px;
+	position: relative;
+	top:150px;
+}
+
+#mercury-moon:hover{
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+#callisto{
+	margin-top: -3350px;
+	position: relative;
+	top:150px;
+}
+
+#callisto:hover{
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+#io{
+	margin-top: -3350px;
+	position: relative;
+	top:150px;
+}
+
+#io:hover{
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+#europa{
+	margin-top: -3350px;
+	position: relative;
+	top:150px;
+}
+
+#europa:hover{
+	-webkit-transform: scale3d(1.2, 1.2, 1);
+     transform: scale3d(1.2, 1.2, 1);
+}
+
+
+
+#large > .fp-tableCell{
+	background-image: url('images/jupiter-red-spot.png');
+	background-size: 100%;
+	background-repeat: none;
+	background-position: bottom;
+	background-color:rgba(0,0,0,0); 
+}
+
+#red-spot img{
+	position: fixed;
+	width:300px;
+	display:none;
+}
+
+#comet{
+	position:relative;
+}
+
+#hubble{
+	position: absolute;
+	left:100px;
+	width:350px;
+	-webkit-animation:hubblewobble 17s ease-in-out infinite;
+    -moz-animation:hubblewobble 17s ease-in-out infinite;
+    -o-animation:hubblewobble 17s ease-in-out infinite;
+    animation:hubblewobble 17s ease-in-out infinite;
+}
+
+#jupiter-hubble{
+	position:absolute;
+	width:350px;
+	right:200px;
+	top:150px;
+}
+
+#comet-impact{
+	position:absolute;
+	width:35px;
+	right:100px;
+	top:300px;
+	-webkit-animation:impact 3s linear infinite;
+    -moz-animation:impact 3s linear infinite;
+    -o-animation:impact 3s linear infinite;
+    animation:impact 3s linear infinite;
+    z-index: 999;
+}
+
+@keyframes impact {
+    0%   {opacity:1; right:100px; top:300px;}
+    25%	 {opacity:0.7; right:150px; top:300px;}
+    50%  {opacity:0.5; right:225px; top:300px;} 
+    75%  {opacity:0.3; right:300px; top:300px;}
+    100% {opacity:0; right:325px; top:300px;}
+}
+
+@keyframes hubblewobble {
+    0%   {top:250px;}
+    50%  {top:350px;}
+    100% {top:250px;}
+}
+
+#magnetic-field{
+	position:relative;
+}
+
+#magnet-jupiter{
+	position: absolute;
+	width:350px;
+	left:375px;
+	top:200px;
+}
+
+#magnet{
+	position:absolute;
+	width:150px;
+	top:250px;
+	right:175px;
+	-webkit-animation:attract 7s linear infinite;
+    -moz-animation:attract 7s linear infinite;
+    -o-animation:attract 7s linear infinite;
+    animation:attract 7s linear infinite;
+}
+
+@keyframes attract {
+    0%   {right:175px; transform: rotate(0deg);}
+    25%	 {transform: rotate(-90deg)}
+    50%  {right:500px;transform: rotate(-90deg)} 
+    75%  {transform: rotate(-90deg)}
+    100% {right:175px; transform: rotate(0deg);}
+}
+
+#visited{
+	position: relative;
+}
+
+#juno{
+	position: absolute;
+	left:100px;
+	top:250px;
+	-webkit-animation:junospin 17s linear infinite;
+    -moz-animation:junospin 17s linear infinite;
+    -o-animation:junospin 17s linear infinite;
+    animation:junospin 17s linear infinite;
+}
+
+@keyframes junospin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#juno-jupiter{
+	position:absolute;
+	right:250px;
+	top:250px;
+	width:200px;
+}
+
+
+#gas > .fp-tableCell{
+	background-image: url('images/gas.png');
+	background-size: 100%;
+	background-repeat: none;
+	background-position: bottom;
+	background-color:rgba(0,0,0,0); 
+}
+
+#ammonia, #ammonium, #water-ice{
+	color:black;
+	position:absolute;
+	font-size:22px;
+	right:550px; 
+	text-align: center;
+	margin:auto;
+}
+
+#ammonia{
+	display:block;
+	top:150px;
+	margin: auto;
+}
+
+#ammonium{
+	display:block;
+	top:400px;
+	right:450px;
+	margin: auto;
+}
+
+#water-ice{
+	display:block;
+	top:600px;
+	margin: auto;
+}
+
+#temp{
+	position: relative;
+}
+
+#temp-title{
+	position: relative;
+	top:-200px;
+}
+
+#astronaut{
+	position: relative;
+	width:250px;
+	margin-top:-1200px;
+	top:300px;
+	-webkit-animation:bobbing 5s ease-in-out infinite;
+    -moz-animation:bobbing 5s ease-in-out infinite;
+    -o-animation:bobbing 5s ease-in-out infinite;
+    animation:bobbing 5s ease-in-out infinite;
+}
+
+@keyframes bobbing {
+    0%   {top:325px;}
+    50%  {top:300px;} 
+    100% {top:325px;}
+}
+
+#sweat1,#sweat2,#sweat3,#sweat4{
+	-webkit-animation:sweating 2s ease-in-out infinite;
+    -moz-animation:sweating 2s ease-in-out infinite;
+    -o-animation:sweating 2s ease-in-out infinite;
+    animation:sweating 2s ease-in-out infinite;
+}
+
+#sweat1{
+	animation-delay: 0.3s,
+}
+
+#sweat2{
+	animation-delay: 0.6s,
+}
+
+#sweat3{
+	animation-delay: 0.9s,
+}
+
+#sweat4{
+	animation-delay: 1.2s,
+}
+
+@keyframes sweating {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;} 
+    100% {opacity: 0;}
+}
+
+#eye1, #eye2{
+	position: relative;
+    -webkit-animation:look 2s linear infinite;
+    -moz-animation:look 2s linear infinite;
+    -o-animation:look 2s linear infinite;
+    animation:look 2s linear infinite;
+}
+
+@keyframes look {
+    0%   {right:100px;}
+    50%  {left:100px;} 
+    100% {right:100px;}
+}
+
+#discover{
+	position: relative;
+	top:-220px;
+}
+
+#herschel{
+	position: relative;
+	margin-top:-1200px; 
+	top:150px;
+	left:0px;
+}
+
+#rotation{
+	position: relative;
+}
+
+#spinning{
+	position: relative;
+	top:-300px;
+}
+
+#earth-spin{
+	position: relative;
+	margin-top:-350px; 
+	top:200px;
+	left:350px;
+	width:150px;
+	height:150px;
+	background-color: white;
+	border-radius: 500px;
+	background-image: url("images/earthbg.png");
+	background-repeat: repeat-x;
+	background-position: top; 
+	animation: animatedEarthBackground 20s linear infinite;
+}
+
+#uranus-spin{
+	position: relative;
+	margin-top:-350px; 
+	top:300px;
+	left:600px;
+	width:400px;
+	height:400px;
+	background-color: blue;
+	border-radius: 1000px;
+	background-image: url("images/uranusbg.png");
+	background-repeat: repeat-x;
+	background-position: center center; 
+	animation: animatedUranusBackground 5s linear infinite;
+}
+
+@keyframes animatedEarthBackground {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}
+
+@keyframes animatedUranusBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+#ice-giant{
+	position: relative;
+}
+
+#ice-giant-title{
+	position: relative;
+	top:-225px;
+}
+
+#giant{
+	margin-top: -2000px;
+	position: relative;
+	width:600px;
+	left:-160px;
+	top:250px;
+}
+
+#crown{
+	margin-top: -2000px;
+	position:relative;
+	top:-100px;
+	width:300px;
+	left:300px;
+}
+
+.section #ice-giant .fp-tableCell > #crown {
+	transform: translateY(-800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active #ice-giant.active .fp-tableCell > #crown {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active #ice-giant.active .fp-tableCell > #crown {
+	transition-delay: 2s;
+}
+
+#tilted{
+	position: relative;
+}
+
+#tilted-title{
+	position: relative;
+	top:-200px;
+}
+
+#tilt{
+	top:200px;
+	margin-top:-2000px ;
+	position: relative;
+	width:600px;
+	-webkit-animation:tilt 5s ease-in-out infinite;
+    -moz-animation:tilt 5s ease-in-out infinite;
+    -o-animation:tilt 5s ease-in-out infinite;
+    animation:tilt 5s ease-in-out infinite;
+}
+
+
+@keyframes tilt {
+    0%   {transform: rotate(0deg);}
+    25%	 {transform: rotate(-90deg);}
+    50%  {transform: rotate(-90deg);} 
+    75%  {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#atmos{
+	position: relative;
+}
+
+#atmos-title{
+	position: relative;
+	top:-200px;
+}
+
+#atmosphere{
+	position: relative;
+	top:150px;
+	left:100px;
+	margin-top:-1500px;
+	width:500px;
+}
+
+
+#hydrogen{
+	position: relative;
+	width:200px;
+	margin-top: -600px;
+	top:-150px;
+	left:200px;
+}
+
+#hydrogen:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+     transform: scale3d(1.1, 1.1, 1);
+ }
+
+#helium{
+	position: relative;
+	width:200px;
+	margin-top: -600px;
+	top:-70px;
+	left:-13px;
+}
+
+#helium:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+     transform: scale3d(1.1, 1.1, 1);
+ }
+
+#uranus-ammonia{
+	position: relative;
+	width:200px;
+	margin-top: -600px;
+	left:-225px;
+	top:10px;
+}
+
+#uranus-ammonia:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+     transform: scale3d(1.1, 1.1, 1);
+ }
+
+#methane{
+	position: relative;
+	width:200px;
+	margin-top: -600px;
+	left:-437px;
+	top:90px;
+}
+
+#methane:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+     transform: scale3d(1.1, 1.1, 1);
+ }
+
+#uranus-ice-rings{
+	position: relative;
+}
+
+#uranus-ice-rings-title{
+	position: relative;
+	top:-200px;
+}
+
+#uranus-rings{
+	position: relative;
+	margin-top: -1200px;
+	top:200px;
+	width:350px;
+	-webkit-animation:skew 5s ease-in-out infinite;
+    -moz-animation:skew 5s ease-in-out infinite;
+    -o-animation:skew 5s ease-in-out infinite;
+    animation:skew 5s ease-in-out infinite;
+}
+
+@keyframes skew {
+    0%   {transform: rotate(0deg);}
+    25%	 {transform: rotate(-35deg);}
+    50%  {transform: rotate(0deg);} 
+    75%  {transform: rotate(35deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#uranium-uranus{
+	position:relative; 
+}
+
+#uranium-title{
+	position:relative;
+	top:-250px;
+}
+
+#uranium{
+	position:relative;
+	margin-top: -1200px;
+	top:200px;
+	width:450px;
+}
+
+.section #uranium-uranus > .fp-tableCell img {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active #uranium-uranus.active > .fp-tableCell img {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active #uranium-uranus.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+#uranus-moons{
+	position: relative;
+}
+
+#uranus-moons-title{
+	position: relative;
+	top:-220px;
+}
+
+
+#oberon{
+	top:100px;
+	margin-top: -1250px;
+	position: relative;
+}
+
+#oberon:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
+     transform: scale3d(1.1, 1.1, 1)!important;
+ }
+
+#umbriel{
+	top:100px;
+	margin-top: -1250px;
+	position: relative;
+}
+
+#umbriel:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
+     transform: scale3d(1.1, 1.1, 1)!important;
+ }
+
+#ariel{
+	top:100px;
+	margin-top: -1250px;
+	position: relative;
+}
+
+#ariel:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
+     transform: scale3d(1.1, 1.1, 1)!important;
+ }
+
+#miranda{
+	top:100px;
+	margin-top: -1250px;
+	position: relative;
+}
+
+#miranda:hover{
+	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
+     transform: scale3d(1.1, 1.1, 1)!important;
+ }
+
+.section #uranus-moons > .fp-tableCell img {
+	transform: translateY(800px);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+}
+
+.section.active #uranus-moons.active > .fp-tableCell img {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.section.active #uranus-moons.active > .fp-tableCell img {
+	transition-delay: .22s;
+}
+
+#cold{
+	position: relative;
+}
+
+#cold-giant{
+	top:-220px;
+}
+
+#uranusplanet{
+	position: relative;
+	margin-top: -1000px;
+	top:160px;
+	animation: shiver 1s linear infinite;
+}
+
+@keyframes shiver {
+    0%   {left:0px;transform: rotate(0deg);}
+    25%	 {left:10px;transform: rotate(2deg);}
+    50%  {left:-10px;transform: rotate(-2deg);} 
+    75%  {left:10px;transform: rotate(2deg);}
+    100% {left:0px;transform: rotate(0deg);}
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

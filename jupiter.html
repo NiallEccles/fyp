@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="shortcut icon" type="image/ico" href="images/jupiterfav.png" />
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+            });
+            $(function() {
+                $(".draggable").draggable();
+            });
+        });
+    </script>
+<script type="text/javascript" src="script.js"></script>
+    <style>
+        .section{
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+    <title>Jupiter: The Biggest Planet</title>
+</head>
+
+<body>
+<nav><a href="index.html">Return</a></nav>
+    <div id="fullpage">
+        <div class="section space">
+            <div class="slide slide-one" id="babylonians">
+                <h2 id="planet-speed-title">Jupiter was discovered by ancient Babylonians.</h2>
+                <img id="baby-jup" class="animated fadeInUp" src="images/jupiter.png">
+            </div>
+            <div class="slide slide-two" id="planet-speeds"><h2 id="shortest">Jupiter has the shortest day of all the planets.</h2>
+                <img id="jupiter-speed" src="images/jupiter1.png">
+                <img id="saturn-speed" src="images/saturn1.png">
+                <img id="uranus-speed" src="images/uranus1.png">
+                <img id="neptune-speed" src="images/neptune1.png">
+
+            </div>
+            <div class="slide slide-three" id="largest"><h2>Jupiter is the largest planet in the solar system.</h2>
+                <img id="large-jupiter" src="images/jupiter.png">
+                <img id="earth-size" src="images/earth.png">
+            </div>
+            <div class="slide slide-four" id="asteroid-field"><h2>There is an asteroid belt between Mars and Jupiter<br>that is made of ice and rock.</h2>
+                <div id="astro">
+                    <img src="images/asteroid1.png" class="asteroids" id="asteroid1">
+                    <img src="images/asteroid2.png" class="asteroids" id="asteroid2">
+                    <img src="images/asteroid3.png" class="asteroids" id="asteroid3">
+                    <img src="images/asteroid4.png" class="asteroids" id="asteroid4">
+                    <img src="images/asteroid5.png" class="asteroids" id="asteroid5">
+                </div>
+            </div>
+            <div class="slide slide-five" id="jup-moons"><h2 id="moons-title">Jupiter has at least 67 moons.<br>Most are captured asteroids, but some are as large as Mercury.</h2>
+            <img id="ganymede" src="images/ganymede1.png">
+            <img id="mercury-moon" src="images/mercury1.png">
+            <img id="callisto" src="images/callisto1.png">
+            <img id="io" src="images/io1.png">
+            <img id="europa" src="images/europa1.png">
+            </div>
+            <div class="slide slide-six" id="large"><h2>Jupiters giant red spot is a massive storm that is larger<br>than Earth and has been going on for hundreds of years.</h2>
+            <img id="red-spot" src="images/redspot.png" style="position: fixed; width:300px; top:200px">
+            </div>
+            <div class="slide slide-seven" id="comet"><h2>Hubble Space Telescope took pictures of comet<br>Shoemaker-Levy 9 crashing into Jupiter.</h2>
+            <img id="hubble" src="images/hubble.png">
+            <img id="comet-impact"src="images/asteroid1.png">
+            <img id="jupiter-hubble" src="images/jupiter.png">
+            </div>
+            <div class="slide slide-eight" id="magnetic-field"><h2>Jupiter has a very strong magnetic field.<br>It is stronger than Earths magnetic field.</h2>
+                <img id="magnet-jupiter" src="images/jupiter.png">
+                <img id="magnet" src="images/magnet.png">
+            </div>
+            <div class="slide slide-nine" id="visited"><h2>8 spacecraft have visited Jupiter. The most recent being Juno.</h2>
+                 <img id="juno" src="images/juno.png">
+                 <img id="juno-jupiter" src="images/jupiter.png">
+            </div>
+            <div class="slide slide-ten" id="gas"><h2>Jupiter has unique cloud layers that are made up of different gases.</h2>
+                
+            </div>
+        </div>
+    </div>            
+</body> 
+</html>

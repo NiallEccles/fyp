@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="shortcut icon" type="image/ico" href="images/uranusfav.png" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+            });
+        });
+    </script>
+
+    <style>
+        .section{
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+    <title>Uranus: The Ice Giant</title>
+</head>
+
+<body>
+<nav><a href="index.html">Return</a></nav>
+    <div id="fullpage">
+        <div class="section space">
+            <div class="slide slide-one"><h2 id="discover">William Herschel discovered Uranus in 1781 and wanted to<br>call it Georgium Sidis after King George III.</h2>
+                <img id="herschel" class="animated fadeInUp" src="images/herschel.png">
+            </div>
+            <div class="slide slide-two" id="rotation"><h2 id="spinning">Uranus spins the opposite direction to Earth.</h2>
+                <div id="earth-spin">
+                </div>
+                <div id="uranus-spin">
+                </div>
+            </div>
+            <div class="slide slide-three" id="ice-giant"><h2 id="ice-giant-title">Uranus is known as the ice giant because it<br>is the largest ice planet in the solar system.</h2>
+                <img id="crown" src="images/crown.png">
+                <img id="giant" src="images/uranus.png">
+            </div>
+            <div class="slide slide-four" id="tilted"><h2 id="tilted-title">Uranus is tilted on its side compared to other planets</h2>
+            <img id="tilt" src="images/uranus.png">
+            </div>
+            <div class="slide slide-five" id="atmos"><h2 id="atmos-title">Uranus's atmosphere contains hydrogen , helium, ammonia and methane.</h2>
+                <img id="atmosphere" src="images/uranus.png">
+                        <img id="hydrogen" src="images/hydrogen.png">
+                        <img id="helium" src="images/helium.png">
+                        <img id="uranus-ammonia" src="images/ammonia.png">
+                        <img id="methane" src="images/methane.png">
+            </div>
+            <div class="slide slide-six" id="uranus-ice-rings"><h2 id="uranus-ice-rings-title">Not many people know, but Uranus has rings made of ice.</h2>
+            <img id="uranus-rings" src="images/uranus-rings.png">
+            </div>
+            <div class="slide slide-seven" id="uranium-uranus"><h2 id="uranium-title">Uranium is named after Uranus. Uranus does not contain Uranium.</h2>
+            <img id="uranium" src="images/uranium.png">
+            </div>
+            <div class="slide slide-eight" id="uranus-moons"><h2 id="uranus-moons-title">Uranus moons are named after Alexander Pope<br> and William Shakespeare characters.</h2>
+            <img id="oberon" src="images/oberon.png">
+            <img id="umbriel" src="images/umbriel.png">
+            <img id="ariel" src="images/ariel.png">
+            <img id="miranda" src="images/miranda.png">
+                <div id="myModal" class="modal">
+                <!-- Modal content -->
+                    <div class="Miranda-content">
+                        <span class="close">&times;</span>
+                        <p>Miranda is a moon of Uranus</p>
+                    </div>
+            </div>
+            </div>
+            <div class="slide slide-nine" id="cold"><h2 id="cold-giant">Uranus is the coldest planet in the solar system.</h2>
+                <img id="uranusplanet" src="images/uranus-hat.png">
+            </div>
+        </div>
+    </div>            
+</body> 
+</html>
