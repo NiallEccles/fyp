@@ -16,9 +16,6 @@
             $('#fullpage').fullpage({
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
             });
-            $(function() {
-                $(".draggable").draggable();
-            });
         });
     </script>
 <script type="text/javascript" src="script.js"></script>
@@ -28,25 +25,28 @@
             text-align: center;
         }
     </style>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert2.min.css" />
     <title>Jupiter: The Biggest Planet</title>
 </head>
 
 <body>
-<nav><a href="index.html">Return</a></nav>
+<nav><a href="index.html#Planet/Jupiter"></a></nav>
     <div id="fullpage">
         <div class="section space">
             <div class="slide slide-one" id="babylonians">
-                <h2 id="planet-speed-title">Jupiter was discovered by ancient Babylonians.</h2>
+                <h2 id="planet-discovery">Jupiter was discovered by ancient Babylonians.</h2>
                 <img id="baby-jup" class="animated fadeInUp" src="images/jupiter.png">
             </div>
             <div class="slide slide-two" id="planet-speeds"><h2 id="shortest">Jupiter has the shortest day of all the planets.</h2>
                 <img id="jupiter-speed" src="images/jupiter1.png">
                 <img id="saturn-speed" src="images/saturn1.png">
-                <img id="uranus-speed" src="images/uranus1.png">
                 <img id="neptune-speed" src="images/neptune1.png">
+                <img id="uranus-speed" src="images/uranus1.png">
+                
 
             </div>
-            <div class="slide slide-three" id="largest"><h2>Jupiter is the largest planet in the solar system.</h2>
+            <div class="slide slide-three" id="largest"><h2 id="largest-title">Jupiter is the largest planet in the solar system.</h2>
                 <img id="large-jupiter" src="images/jupiter.png">
                 <img id="earth-size" src="images/earth.png">
             </div>
@@ -66,7 +66,7 @@
             <img id="io" src="images/io1.png">
             <img id="europa" src="images/europa1.png">
             </div>
-            <div class="slide slide-six" id="large"><h2>Jupiters giant red spot is a massive storm that is larger<br>than Earth and has been going on for hundreds of years.</h2>
+            <div class="slide slide-six" id="jupiter-giant"><h2 id="jupiter-giant-title">Jupiters giant red spot is a massive storm that is larger<br>than Earth and has been going on for hundreds of years.</h2>
             <img id="red-spot" src="images/redspot.png" style="position: fixed; width:300px; top:200px">
             </div>
             <div class="slide slide-seven" id="comet"><h2>Hubble Space Telescope took pictures of comet<br>Shoemaker-Levy 9 crashing into Jupiter.</h2>
@@ -74,18 +74,289 @@
             <img id="comet-impact"src="images/asteroid1.png">
             <img id="jupiter-hubble" src="images/jupiter.png">
             </div>
-            <div class="slide slide-eight" id="magnetic-field"><h2>Jupiter has a very strong magnetic field.<br>It is stronger than Earths magnetic field.</h2>
-                <img id="magnet-jupiter" src="images/jupiter.png">
-                <img id="magnet" src="images/magnet.png">
+            <div class="slide slide-eight" id="magnetic-field"><h2 id="magnetic-field-title">Jupiter has a very strong magnetic field.<br>It is stronger than Earths magnetic field.</h2>
+                <svg version="1.1" id="jupiter-magnet_scene" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+                <g id="attract-jupiter">
+                    <circle fill="#DCD2B5" cx="538.758" cy="576.166" r="279.592"/>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_1_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                            <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_2_)" fill="#AA958A" d="M274.772,747.539h41.784h21.582c0,0,39.41,4.125,42.226,0
+                            c2.815-4.123,25.336-8.072,28.151-8.914c2.815-0.84,69.438,5.373,69.438,5.373l32.843-0.039l38.474,5.414
+                            c0,0,59.712-5.807,61.76-5.414c2.048,0.395,29.685,3.359,31.818,0s35.59-4.648,37.629-5.412c2.039-0.762,90.243,0,90.243,0
+                            l-16.89,39.588l-117.717,67.561l-47.434,21.582c0,0-101.877,6.568-105.833,6.568s-78.086-4.691-78.086-4.691l-88.205-19.705
+                            L274.772,747.539z"/>
+                        <path clip-path="url(#SVGID_2_)" fill="#918076" d="M344.817,777.557h41.784h21.582c0,0,39.41,4.125,42.226,0
+                            c2.815-4.123,25.336-8.072,28.151-8.914c2.815-0.84,69.438,5.373,69.438,5.373l32.842-0.039l38.473,5.414
+                            c0,0,59.712-5.807,61.76-5.414c2.048,0.395,29.685,3.359,31.818,0s35.59-4.648,37.629-5.412c2.039-0.762,90.243,0,90.243,0
+                            l-16.89,39.588l-117.717,67.561l-47.434,21.582c0,0-101.874,6.568-105.83,6.568s-78.086-4.691-78.086-4.691l-88.205-19.705
+                            L344.817,777.557z"/>
+                    </g>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_3_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_4_">
+                            <use xlink:href="#SVGID_3_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_4_)" fill="#F8E7C0" d="M288.507,440.697l26.542-4.833h10.713h17.647h7.843h9.804l23.529-13.705
+                            l13.726,9.269h11.765h7.843l21.568,9.27h19.608h11.765h13.726l11.765-9.27h21.569h16.95l22.023,9.27h19.851h9.804l21.569-9.27
+                            h29.411h13.726l24.901,9.27h8.918h25.084c13.646-1.961,29.332-9.27,29.332-9.27s1.962-3.387,7.844,0s19.901,0,19.901,0h17.354
+                            l9.804-9.269l-70.767-80.555l-38.552-49.926l-150.203-19.305l-134.597,38.393l-111.765,21.639V440.697z"/>
+                        <path clip-path="url(#SVGID_4_)" fill="#D7C99D" d="M284.507,418.729l26.542-4.833h10.713h17.647h7.843h9.804l23.529-13.705
+                            l13.726,9.269h11.765h7.843l21.568,9.27h19.608h11.765h13.726l11.765-9.27h21.569h16.95l22.023,9.27h19.851h9.804l21.569-9.27
+                            h29.411h13.726l24.901,9.27h8.918h25.084c13.646-1.961,29.332-9.27,29.332-9.27s1.962-3.387,7.844,0s19.901,0,19.901,0h17.354
+                            l9.804-9.269l-70.767-80.555l-38.552-49.926l-150.203-19.305l-134.597,38.393l-111.765,21.639V418.729z"/>
+                    </g>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_5_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_6_">
+                            <use xlink:href="#SVGID_5_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_6_)" fill="#D1C3A4" d="M227.292,591.834h121.749h37.816c0,0,8.301,2.201,18.447,0
+                            s31.432-6.91,46.117,0.979s52.573,8.353,52.573,8.353s66.517,8.76,71.942,5.07s19.368-15.89,22.136-14.401s60.019,0.356,59.985,0
+                            s43.317-6.391,43.317-6.391s6.063,2.267,18.446,0s68.66,1.001,68.66,1.001l58.623,20.698l-13.836,62.646l-7.378,3.779
+                            c0,0-41.31-3.436-45.195-3.779s-35.971,0-35.971,0l-61.583,14.848l-111.816-20.848c0,0-24.01-5.713-24.918-5.348
+                            c-0.908,0.367-59.015,5.348-59.015,5.348h-33.205c0,0-22.778-3.867-23.379-5.348c-0.601-1.479-21.815,0-21.815,0l-43.35,5.348
+                            l-46.117-9.592l-20.292-1.846l-34.126,0.924l-37.816-14.758c0,0-13.835-16.117-13.835-22.355S227.292,591.834,227.292,591.834z"/>
+                    </g>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_7_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_8_">
+                            <use xlink:href="#SVGID_7_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_8_)" fill="#A49186" d="M401.037,831.301h58.497h29.999c9-3,23.999,0,23.999,0l39.361-1.334h43.135
+                            h26.999h19.499l63.631,11.834l-15.634,34.498l-257.987-10.5L401.037,831.301z"/>
+                    </g>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_9_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_10_">
+                            <use xlink:href="#SVGID_9_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_10_)" fill="#C28B34" d="M821.578,707.695h-12.131h-19.153h-56.183h-44.691c0,0-40.223-1.914-42.139,0
+                            c-1.914,1.916-35.113-0.424-39.583-0.85c-4.47-0.428-80.444,1.594-80.444,1.594s-49.16-1.926-52.991-1.654
+                            s-58.099,1.654-58.099,1.654l-69.591-0.84c0,0-37.669-0.5-39.584-0.84c-1.915-0.342-50.438,0-50.438,0l-15.322-48.936l7.023-6.391
+                            l21.068,6.391l14.685,3.268l31.922,3.123l14.685-9.508c0,0,38.067,1.985,38.307,5.746c0.239,3.762,19.792,3.762,19.792,3.762
+                            l33.199-3.762l30.646-6.384l32.561,3.755h98.321l68.314,6.391l33.199-10.146l34.476,3.755h30.007h35.115l33.469,2.588
+                            l15.691-2.588L821.578,707.695z"/>
+                        <path clip-path="url(#SVGID_10_)" fill="#C99036" d="M821.578,697.689h-12.131h-19.153h-56.183h-44.691c0,0-40.223-1.914-42.139,0
+                            c-1.914,1.916-35.113-0.424-39.583-0.85c-4.47-0.428-80.444,1.594-80.444,1.594s-49.16-1.926-52.991-1.654
+                            s-58.099,1.654-58.099,1.654l-69.591-0.84c0,0-37.669-0.5-39.584-0.84c-1.915-0.342-50.438,0-50.438,0l-15.322-48.936l7.023-6.391
+                            l21.068,6.391l14.685,3.268l31.922,3.123l14.685-9.508c0,0,38.067,1.984,38.307,5.746s19.792,3.762,19.792,3.762l33.199-3.762
+                            l30.646-6.385l32.561,3.756h98.321l68.314,6.391l33.199-10.146l34.476,3.756h30.007h35.115l33.469,2.588l15.691-2.588
+                            L821.578,697.689z"/>
+                    </g>
+                    <ellipse fill="#E08A7C" cx="700.808" cy="649.979" rx="59" ry="26.812"/>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_11_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_12_">
+                            <use xlink:href="#SVGID_11_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_12_)" fill="#B88531" d="M255.939,558.297h12.13h19.154h56.183h44.691c0,0,40.223,1.916,42.138,0
+                            c1.915-1.914,35.114,0.426,39.583,0.852s80.444-1.594,80.444-1.594s49.16,1.924,52.991,1.652s58.099-1.652,58.099-1.652
+                            l69.591,0.84c0,0,37.669,0.498,39.584,0.84c1.915,0.34,50.438,0,50.438,0l15.322,48.936l-7.023,6.391l-21.068-6.391l-14.685-3.268
+                            l-31.922-3.123l-14.685,9.508c0,0-38.067-1.985-38.307-5.746c-0.239-3.762-19.792-3.762-19.792-3.762l-33.199,3.762l-30.646,6.384
+                            l-32.561-3.755H494.08l-68.314-6.391l-33.199,10.146l-34.476-3.755h-30.007h-35.115l-33.47-2.588l-15.691,2.588L255.939,558.297z"
+                            />
+                        <path clip-path="url(#SVGID_12_)" fill="#BF8933" d="M255.939,532.569h12.13h19.154h56.183h44.691c0,0,40.223,1.915,42.138,0
+                            s35.114,0.425,39.583,0.851s80.444-1.594,80.444-1.594s49.16,1.925,52.991,1.653s58.099-1.653,58.099-1.653l69.591,0.84
+                            c0,0,37.669,0.499,39.584,0.84s50.438,0,50.438,0l15.322,48.936l-7.023,6.391l-21.068-6.391l-14.685-3.268l-31.922-3.123
+                            l-14.685,9.508c0,0-38.067-1.984-38.307-5.746s-19.792-3.762-19.792-3.762l-33.199,3.762l-30.646,6.385l-32.561-3.756H494.08
+                            l-68.314-6.391l-33.199,10.146l-34.476-3.756h-30.007h-35.115l-33.47-2.588l-15.691,2.588L255.939,532.569z"/>
+                        <path clip-path="url(#SVGID_12_)" fill="#C18A33" d="M255.939,542.576h12.13h19.154h56.183h44.691c0,0,40.223,1.914,42.138,0
+                            c1.915-1.916,35.114,0.424,39.583,0.851s80.444-1.595,80.444-1.595s49.16,1.926,52.991,1.654s58.099-1.654,58.099-1.654
+                            l69.591,0.84c0,0,37.669,0.5,39.584,0.84c1.915,0.342,50.438,0,50.438,0l15.322,48.937l-7.023,6.391l-21.068-6.391l-14.685-3.269
+                            l-31.922-3.122l-14.685,9.507c0,0-38.067-1.984-38.307-5.746c-0.239-3.761-19.792-3.761-19.792-3.761l-33.199,3.761l-30.646,6.385
+                            l-32.561-3.755H494.08l-68.314-6.391l-33.199,10.146l-34.476-3.755h-30.007h-35.115l-33.47-2.589l-15.691,2.589L255.939,542.576z"
+                            />
+                    </g>
+                    <ellipse fill="#D68476" cx="700.808" cy="649.979" rx="45.797" ry="20.812"/>
+                    <ellipse fill="#BF766A" cx="700.807" cy="649.979" rx="34.036" ry="15.468"/>
+                    <g>
+                        <defs>
+                            <circle id="SVGID_13_" cx="538.758" cy="576.166" r="279.592"/>
+                        </defs>
+                        <clipPath id="SVGID_14_">
+                            <use xlink:href="#SVGID_13_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_14_)" fill="#A08D82" d="M267.989,479.498h148.961c0,0,149.813,5.107,152.366,4.256
+                            s100.975,0.191,102.837,0.096s149.121-3.5,151.675-4.352s49.37,21.28,49.37,21.28l-3.405,20.217l-231.528-12.556l-183.01-8.205
+                            H262.031L267.989,479.498z"/>
+                    </g>
+                    <ellipse fill="#DCD2B5" cx="783.388" cy="503.599" rx="13.093" ry="5.729"/>
+                    <ellipse fill="#B88531" cx="428.639" cy="613.266" rx="13.093" ry="5.729"/>
+                    <ellipse fill="#D1C3A4" cx="343.846" cy="659.719" rx="13.093" ry="5.73"/>
+                    <ellipse fill="#F8E7C0" cx="569.143" cy="408.065" rx="13.093" ry="5.729"/>
+                    <circle fill="#F8E7C0" cx="445.766" cy="375.585" r="8.056"/>
+                </g>
+                <g id="jupiter-magnet">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#B2B3B3" d="M1671.477,548.17c0.961,5.447,4.906,9.314,7.518,13.855
+                        c17.418,30.316,13.115,59.076-5.424,87.186c-4.518,6.852-10.354,12.789-13.904,20.285c-6.248,5.221-12.494,10.445-18.746,15.668
+                        c-4.602,0.447-7.949,3.688-11.963,5.463c-21.426,9.479-44.316,11.645-67.197,14.018c-76.156,7.898-152.631,3.781-228.93,6.17
+                        c-3.727,0.113-5.221-1.637-6.219-4.768c-3.205-10.074-6.287-20.201-9.868-30.141c-2.935-8.154-3.169-16.117-0.976-24.479
+                        c2.518-9.607,4.686-19.328,6.471-29.1c0.99-5.455,3.282-7.18,8.963-7.199c76.156-0.242,152.322,2.219,228.475-0.512
+                        c15.145-0.543,30.182-1.561,44.547-7.035c3.723-1.42,4.934-3.006,3.303-7.344c-4.748-12.641-12.674-22.945-22.605-31.637
+                        c-26.557-23.234-58.049-34.465-92.961-35.287c-68.244-1.605-136.471,0.068-204.666,2.939c-14.598,0.613-14.592,0.689-19.342-13.297
+                        c-10.075-29.697-9.82-29.635-2.695-59.393c1.633-6.813,4.762-8.344,11.082-8.346c39.321-0.033,78.645-0.457,117.967-0.613
+                        c36.152-0.143,72.375-2.023,108.375,2.814c46.986,6.316,90.869,20.721,128.863,50.301c6.814,5.307,12.348,12.125,19.912,16.496
+                        C1658.127,532.201,1664.805,540.186,1671.477,548.17z M1534.871,468.854c-34.215-7.826-69.01-8.061-103.848-7.988
+                        c-31.629,0.066-63.261-0.059-94.893-0.184c-7.961-0.029-8.082,0.063-4.948,7.023c3.321,7.385,6.763,14.736,9.591,22.313
+                        c1.168,3.127,3.131,2.002,4.852,1.984c27.787-0.248,55.576-0.916,83.361-0.814c30.027,0.107,60.164-1.232,89.988,3.553
+                        c31.781,5.094,61.404,15.635,85.4,38.018c14.77,13.779,25.703,29.852,23.842,51.598c-1.355,15.826-9.137,25.643-24.375,30.758
+                        c-18.523,6.219-37.813,6.328-56.98,6.967c-43.602,1.461-87.209-0.18-130.816-0.068c-2.029,0-4.064,0.203-6.094,0.166
+                        c-3.982-0.078-4.768,1.602-3.092,5.047c4.2,8.629,8.309,17.303,12.463,25.955c0.194,0.406,0.629,0.752,0.684,1.164
+                        c1.767,13.51,10.225,14.309,22.02,14.121c57.84-0.93,115.707-0.613,173.314-6.906c17.547-1.914,34.393-6.797,48.084-18.416
+                        c19.391-16.453,24.768-40.373,15.887-64.629c-5.453-14.896-14.857-27.271-22.775-37.703
+                        C1623.254,501.238,1582.189,479.678,1534.871,468.854z M1340.852,502.471c-1.656,5.861-2.832,11.895-4.903,17.6
+                        c-1.965,5.402-0.214,6.686,4.958,6.572c19.611-0.422,39.229-0.832,58.845-0.848c36.079-0.033,72.216-2.357,108.218,1.459
+                        c39.445,4.182,72.391,20.947,97.633,52.033c4.201,5.178,6.668,11.199,9.369,17.143c0.598,1.322,0.217,3.594,2.406,3.527
+                        c1.736-0.057,2.43-1.795,3.148-3.213c6.979-13.811,5.234-27.389-2.309-40.096c-18.15-30.572-46.877-45.713-80.287-53.715
+                        c-36.4-8.715-73.488-7.275-110.441-7.348c-25.933-0.049-51.867,0.752-77.801,1.109c-2.271,0.029-4.512-0.125-7.037,1.123
+                        C1342.122,499.156,1341.33,500.77,1340.852,502.471z M1566.729,670.17c-25.236,0.977-50.48,1.73-75.727,2.396
+                        c-19.605,0.518-39.221,0.818-58.832,1.035c-3.135,0.033-5.092,0.82-6.208,3.881c-2.981,8.178-6.135,16.293-9.472,25.1
+                        c28.791-0.277,56.924,0.037,85.008-0.992c27.502-1.008,54.961-3.363,82.301-6.672c16.205-1.959,32.154-5.217,46.709-13.016
+                        c12.889-6.91,23.742-16.23,31.566-28.781c0.475-0.76,0.877-1.592-0.137-2.863C1632.586,667.838,1599.613,668.9,1566.729,670.17z
+                         M1395.744,622.811c-20.762-0.404-41.525-0.766-62.275-1.453c-4.29-0.143-4.377,1.1-3.16,4.488
+                        c4.625,12.902,9.193,25.822,13.484,38.836c1.039,3.145,2.426,4.178,5.714,4.172c23.198-0.045,46.399-0.82,69.595,0.283
+                        c1.803,0.086,3.375-0.432,2.381-2.541c-6.502-13.818-13.128-27.58-19.717-41.361
+                        C1400.264,622.984,1398.117,622.857,1395.744,622.811z M1397.298,702.752c14.448,0.043,14.434,0.109,19.664-13.322
+                        c1.521-3.91,3.18-7.766,4.747-11.662c1.289-3.195,0.906-4.904-3.266-4.912c-23.678-0.037-47.355-0.254-71.027-0.516
+                        c-2.361-0.021-3.909,0.504-4.611,2.867c-2.68,9.014-5.389,18.016-8.25,27.563C1355.917,702.758,1376.609,702.691,1397.298,702.752z
+                         M1283.124,490.352c0.861,2.693,2.354,2.717,4.497,2.686c16.459-0.227,32.921-0.398,50.383-0.598
+                        c-4.75-10.133-9.234-19.754-13.775-29.348c-0.709-1.51-1.872-2.285-3.758-2.266c-15.5,0.184-31,0.256-47.389,0.367
+                        C1276.606,471.32,1280.059,480.773,1283.124,490.352z M1326.885,526.648c2.922-0.104,3.789-1.475,4.408-3.957
+                        c2.115-8.516,4.406-16.99,6.779-26.045c-16.943,0.016-33.396,0.068-49.848,0c-2.6-0.01-2.85,1.623-3.218,3.447
+                        c-1.892,9.289-3.796,18.574-5.851,28.619C1295.396,527.988,1311.137,527.211,1326.885,526.648z M1340.479,670.08
+                        c0.482-1.594,0.211-3.072-0.32-4.6c-3.996-11.533-7.955-23.072-12.029-34.914c-10.377,16.195-8.373,51.736,3.893,67.461
+                        C1334.916,688.453,1337.686,679.262,1340.479,670.08z M1276.16,525.67c6.955-27.809,6.505-32.842-5.205-57.863
+                        C1263.054,488.887,1265.061,511.156,1276.16,525.67z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#A12524" d="M1656.535,540.811c-33.281-39.572-74.346-61.133-121.664-71.957
+                        c-34.215-7.826-69.01-8.061-103.848-7.988c-31.629,0.066-63.261-0.059-94.893-0.184c-7.961-0.029-8.082,0.063-4.948,7.023
+                        c3.321,7.385,6.763,14.736,9.591,22.313c1.168,3.127,3.131,2.002,4.852,1.984c27.787-0.248,55.576-0.916,83.361-0.814
+                        c30.027,0.107,60.164-1.232,89.988,3.553c31.781,5.094,61.404,15.635,85.4,38.018c14.77,13.779,25.703,29.852,23.842,51.598
+                        c-1.355,15.826-9.137,25.643-24.375,30.758c-18.523,6.219-37.813,6.328-56.98,6.967c-43.602,1.461-87.209-0.18-130.816-0.068
+                        c-2.029,0-4.064,0.203-6.094,0.166c-3.982-0.078-4.768,1.602-3.092,5.047c4.2,8.629,8.309,17.303,12.463,25.955
+                        c0.194,0.406,0.629,0.752,0.684,1.164c1.767,13.51,10.225,14.309,22.02,14.121c57.84-0.93,115.707-0.613,173.314-6.906
+                        c17.547-1.914,34.393-6.797,48.084-18.416c19.391-16.453,24.768-40.373,15.887-64.629
+                        C1673.857,563.617,1664.453,551.242,1656.535,540.811z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#A12524" d="M1342.65,497.818c-0.528,1.338-1.32,2.951-1.799,4.652
+                        c-1.656,5.861-2.832,11.895-4.903,17.6c-1.965,5.402-0.214,6.686,4.958,6.572c19.611-0.422,39.229-0.832,58.845-0.848
+                        c36.079-0.033,72.216-2.357,108.218,1.459c39.445,4.182,72.391,20.947,97.633,52.033c4.201,5.178,6.668,11.199,9.369,17.143
+                        c0.598,1.322,0.217,3.594,2.406,3.527c1.736-0.057,2.43-1.795,3.148-3.213c6.979-13.811,5.234-27.389-2.309-40.096
+                        c-18.15-30.572-46.877-45.713-80.287-53.715c-36.4-8.715-73.488-7.275-110.441-7.348c-25.933-0.049-51.867,0.752-77.801,1.109
+                        C1347.416,496.725,1345.176,496.57,1342.65,497.818z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#257E9E" d="M1661.938,650.258c-29.352,17.58-62.324,18.643-95.209,19.912
+                        c-25.236,0.977-50.48,1.73-75.727,2.396c-19.605,0.518-39.221,0.818-58.832,1.035c-3.135,0.033-5.092,0.82-6.208,3.881
+                        c-2.981,8.178-6.135,16.293-9.472,25.1c28.791-0.277,56.924,0.037,85.008-0.992c27.502-1.008,54.961-3.363,82.301-6.672
+                        c16.205-1.959,32.154-5.217,46.709-13.016c12.889-6.91,23.742-16.23,31.566-28.781
+                        C1662.549,652.361,1662.951,651.529,1661.938,650.258z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1401.766,625.234c-1.502-2.25-3.648-2.377-6.021-2.424
+                        c-20.762-0.404-41.525-0.766-62.275-1.453c-4.29-0.143-4.377,1.1-3.16,4.488c4.625,12.902,9.193,25.822,13.484,38.836
+                        c1.039,3.145,2.426,4.178,5.714,4.172c23.198-0.045,46.399-0.82,69.595,0.283c1.803,0.086,3.375-0.432,2.381-2.541
+                        C1414.98,652.777,1408.354,639.016,1401.766,625.234z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1334.555,702.77c21.362-0.012,42.055-0.078,62.743-0.018
+                        c14.448,0.043,14.434,0.109,19.664-13.322c1.521-3.91,3.18-7.766,4.747-11.662c1.289-3.195,0.906-4.904-3.266-4.912
+                        c-23.678-0.037-47.355-0.254-71.027-0.516c-2.361-0.021-3.909,0.504-4.611,2.867
+                        C1340.125,684.221,1337.416,693.223,1334.555,702.77z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1273.082,461.193c3.524,10.127,6.977,19.58,10.042,29.158
+                        c0.861,2.693,2.354,2.717,4.497,2.686c16.459-0.227,32.921-0.398,50.383-0.598c-4.75-10.133-9.234-19.754-13.775-29.348
+                        c-0.709-1.51-1.872-2.285-3.758-2.266C1304.971,461.01,1289.471,461.082,1273.082,461.193z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1279.156,528.713c16.24-0.725,31.98-1.502,47.729-2.064
+                        c2.922-0.104,3.789-1.475,4.408-3.957c2.115-8.516,4.406-16.99,6.779-26.045c-16.943,0.016-33.396,0.068-49.848,0
+                        c-2.6-0.01-2.85,1.623-3.218,3.447C1283.115,509.383,1281.211,518.668,1279.156,528.713z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1332.021,698.027c2.895-9.574,5.664-18.766,8.457-27.947
+                        c0.482-1.594,0.211-3.072-0.32-4.6c-3.996-11.533-7.955-23.072-12.029-34.914C1317.752,646.762,1319.756,682.303,1332.021,698.027z
+                        "/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" d="M1270.955,467.807c-7.901,21.08-5.895,43.35,5.205,57.863
+                        C1283.115,497.861,1282.665,492.828,1270.955,467.807z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#A12524" d="M1431.023,460.865c-31.629,0.066-63.261-0.059-94.893-0.184
+                        c-7.961-0.029-8.082,0.063-4.948,7.023c3.321,7.385,6.763,14.736,9.591,22.313c1.168,3.127,3.131,2.002,4.852,1.984
+                        c27.787-0.248,55.576-0.916,83.361-0.814"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#257E9E" d="M1626.684,566.236c1.5,5.59,2.092,11.6,1.533,18.119
+                        c-1.355,15.826-9.137,25.643-24.375,30.758c-18.523,6.219-37.813,6.328-56.98,6.967c-43.602,1.461-87.209-0.18-130.816-0.068
+                        c-2.029,0-4.064,0.203-6.094,0.166c-3.982-0.078-4.768,1.602-3.092,5.047c4.2,8.629,8.309,17.303,12.463,25.955
+                        c0.194,0.406,0.629,0.752,0.684,1.164c1.767,13.51,10.225,14.309,22.02,14.121c57.84-0.93,115.707-0.613,173.314-6.906
+                        c17.547-1.914,34.393-6.797,48.084-18.416c19.391-16.453,24.768-40.373,15.887-64.629c-1.346-3.678-2.936-7.205-4.684-10.586"/>
+                    
+                        <line fill="none" stroke="#B2B3B3" stroke-width="4" stroke-miterlimit="10" x1="1677.408" y1="567.957" x2="1624.932" y2="566.52"/>
+                </g>
+                <g id="blue-attract">
+                    
+                        <path id="blue-attract-1" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#257E9E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                        M1233.457,643.426c-14.204,0-25.719,11.515-25.719,25.72c0,14.204,11.515,25.72,25.719,25.72"/>
+                    
+                        <path id="blue-attract-2" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#257E9E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                        M1152.922,636.193c-17.642,0-31.943,14.301-31.943,31.943c0,17.642,14.302,31.943,31.943,31.943"/>
+                </g>
+                <g id="red-attract">
+                    
+                        <path id="red-attract-1" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#A12524" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                        M1180.574,475.657c-14.204,0-25.72,11.514-25.72,25.719c0,14.205,11.516,25.72,25.72,25.72"/>
+                    
+                        <path id="red-attract-2" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#A12524" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                        M1102.893,469.654c-17.642,0-31.943,14.301-31.943,31.943c0,17.642,14.302,31.943,31.943,31.943"/>
+                </g>
+                </svg>
             </div>
             <div class="slide slide-nine" id="visited"><h2>8 spacecraft have visited Jupiter. The most recent being Juno.</h2>
                  <img id="juno" src="images/juno.png">
                  <img id="juno-jupiter" src="images/jupiter.png">
             </div>
-            <div class="slide slide-ten" id="gas"><h2>Jupiter has unique cloud layers that are made up of different gases.</h2>
-                
+            <div class="slide slide-ten" id="gas"><h2 id="gas-title">Jupiter has unique cloud layers that are made up of different gases.</h2>
+                <svg version="1.1" id="jupiter-layers" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" preserveAspectRatio="none" viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+                <g id="ammonia-ice-layer">
+                    <rect x="0" fill="#AF9C74" width="1920" height="360"/>
+                    <text transform="matrix(1 0 0 1 703.3853 329.8682)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Ammonia Ice | 20km - 50km </text>
+                </g>
+                <g id="ammonium-ice-layer">
+                    <rect x="0" y="360" fill="#AA6E29" width="1920" height="360"/>
+                    <text transform="matrix(1 0 0 1 575.1226 689.8672)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Ammonium Hydrosulfide Ice | 50km - 70km</text>
+                </g>
+                <g id="water-ice-layer">
+                    <rect x="0" y="720" fill="#9CB4B8" width="1920" height="360"/>
+                    <text transform="matrix(1 0 0 1 734.0532 1043.8682)" font-family="'Muli'" font-size="37">Water Ice | 70km - 80km </text>
+                </g>
+                </svg>
             </div>
         </div>
-    </div>            
+    </div>      
+    <script>
+        document.querySelector('#baby-jup').onclick = function(){swal({title: "Ancient Babylonians",text: "It was in the 7th or 8th century when the Babylonians first saw Jupiter.", imageUrl:"images/jupiter-render.png"});};
+
+        document.querySelector('#large-jupiter').onclick = function(){swal({title: "Jupiter and the Sun",text: "Jupiter may be the largest planet, but 1,000 Jupiters could fit inside the sun!"});};
+        document.querySelector('#earth-size').onclick = function(){swal({title: "Earth and Jupiter",text: "Jupiter is so massive that 1,300 Earths could fit inside Jupiter!"});};
+
+        document.querySelector('#ganymede').onclick = function(){swal({title: "Ganymede",text: "Ganymede is the largest mooon in the solar system and has a salty ocean under the surface of ice.", imageUrl:"images/ganymede-real.png"});};
+        document.querySelector('#mercury-moon').onclick = function(){swal({title: "Mercury",text: "The smallest planet in our solar system.", imageUrl:"images/mercury-render.png"});};
+        document.querySelector('#callisto').onclick = function(){swal({title: "Callisto",text: "Callisto's surface is heavily cratered.", imageUrl:"images/callisto-real.png"});};
+        document.querySelector('#io').onclick = function(){swal({title: "Io",text: "NASA described Io as a giant pizza covered with melted cheese and spots of tomato and ripe olives. Yum!", imageUrl:"images/io-real.png"});};
+        document.querySelector('#europa').onclick = function(){swal({title: "Europa",text: "Europa actually has the smoothest surface of any moon or planet in the solar system. It is also believed to have water beneath its surface.", imageUrl:"images/europa-real.png"});};
+
+        document.querySelector('#juno').onclick = function(){swal({title: "Juno",text: "Juno was the second spacecraft to orbit Jupiter and was sent into Jupiters atmosphere where it was destroyed.", imageUrl:"images/juno-real.png"});};
+
+        document.querySelector('#red-spot').onclick = function(){swal({title: "Giant Red Spot",text: "Size of Earth and Jupiters Red Spot.", imageUrl:"images/Jupiter_Earth_size_comparison.jpg"});};
+        document.querySelector('#hubble').onclick = function(){swal({title: "Hubble Space Telescope",text: "The first large space telescope.", imageUrl:"images/hubble_earth.png"});};
+        document.querySelector('#jupiter-hubble').onclick = function(){swal({title: "Shoemaker-Levy 9",text: "Impact can be seen by the flash of light on the left.", imageUrl:"images/shoemaker.gif"});};
+        document.querySelector('#attract-jupiter').onclick = function(){swal({title: "Magnetic Field",text: "Jupiters magnetc field is 20,000 times stronger than Earths."});};
+        document.querySelector('#jupiter-magnet').onclick = function(){swal({title: "Magnetic Field",text: "Due to its large magnetic field, there is a lot of radiation around Jupiter."});};
+        document.querySelector('#ammonia-ice-layer').onclick = function(){swal({title: "Ammonia Ice",text: "Jupiter gets its lighter colour from the ammonia ice layer that comes to the surface."});};
+        document.querySelector('#ammonium-ice-layer').onclick = function(){swal({title: "Ammonium Hydrosulfide Ice",text: "This is a much heavier layer and this causes it to fall below the Ammonia Ice layer."});};
+        document.querySelector('#water-ice-layer').onclick = function(){swal({title:"Water Ice", text: "The water ice layer is a much lower layer that cannot be seen."});};
+
+    </script>      
 </body> 
 </html>

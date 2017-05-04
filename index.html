@@ -6,14 +6,16 @@
     <script src="vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="jquery.fullPage.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aladin|Droid+Sans:700|Righteous|Squada+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <link rel="shortcut icon" type="image/ico" href="images/system.png" />
+    <link rel="shortcut icon" type="image/ico" href="images/SpaceAroundUsFav.png" />
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+                anchors:['Planet','Mars', 'Jupiter', 'Saturn', 'Uranus']
             });
         });
     </script>
@@ -24,21 +26,22 @@
             text-align: center;
         }
     </style>
+    <title>Space Around Us</title>
 </head>
 
 <body>
 <!-- <audio src="sounds/158733__panzertank15__spaceambient.wav" autoplay="true" loop="true"></audio> -->
     <div id="fullpage">
-    <audio src="sounds/background.wav" autoplay="true"></audio>
+    <audio src="sounds/background.wav" autoplay="true" loop></audio>
         <div class="section space">
-            <div class="slide slide-one"><h1 class="animated fadeInDown
-">Atlas</h1><p class="animated fadeInDown
-" id="tool-tip">Use the arrow keys or click the arrows</p><br><img id="arrows" src="images/keys.png" style="width:150px"; class="animated fadeInDown
+            <div class="slide slide-one" data-anchor="Space Around Us"><h1 class="animated fadeInDown
+">Space Around Us</h1><p class="animated fadeInDown
+" id="click-arrows">Click the arrows to continue</p><br><img id="arrows" src="images/mouse.png" style="width:50px"; class="animated fadeInDown
 "></div>
-            <div class="slide slide-two"><a href="mars.html"><img src="images/mars.png" style="width:400px";><br><span id="Mars">MARS</span><br><span id="Mars-Text">THE RED PLANET</span></a></div>
-            <div class="slide slide-three"><a href="jupiter.html"><img src="images/jupiter.png" style="width:400px";><br><span id="Jupiter">JUPITER</span><br><span id="Jupiter-Text">THE BIGGEST PLANET</span></a></div>
-            <div class="slide slide-four"><a href="saturn.html"><img src="images/saturn.png" style="width:700px";><br><span id="Saturn">SATURN</span><br><span id="Saturn-Text">THE RINGED PLANET</span></a></div>
-            <div class="slide slide-five"><a href="uranus.html"><img src="images/uranus.png" style="width:475px";><br><span id="Uranus">URANUS</span><br><span id="Uranus-Text">THE ICE GIANT</span></a></div>
+            <div class="slide slide-two" id="mars-active" data-anchor="Mars"><a href="mars.html"><img src="images/mars.png" style="width:400px";><br><span id="Mars">MARS</span><br><span id="Mars-Text">THE RED PLANET</span></a><span id="click-planet">Click a planet to explore!</span></div>
+            <div class="slide slide-three" data-anchor="Jupiter"><a href="jupiter.html"><img src="images/jupiter.png" style="width:400px";><br><span id="Jupiter">JUPITER</span><br><span id="Jupiter-Text">THE BIGGEST PLANET</span></a></div>
+            <div class="slide slide-four" data-anchor="Saturn"><a href="saturn.html"><img src="images/saturn.png" style="width:700px";><br><span id="Saturn">SATURN</span><br><span id="Saturn-Text">THE RINGED PLANET</span></a></div>
+            <div class="slide slide-five" data-anchor="Uranus"><a href="uranus.html"><img src="images/uranus.png" style="width:475px";><br><span id="Uranus">URANUS</span><br><span id="Uranus-Text">THE ICE GIANT</span></a></div>
         </div>
     </div>            
 </body> 

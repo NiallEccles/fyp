@@ -24,14 +24,16 @@
             text-align: center;
         }
     </style>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert2.min.css" />
     <title>Uranus: The Ice Giant</title>
 </head>
 
 <body>
-<nav><a href="index.html">Return</a></nav>
+<nav><a href="index.html#Planet/Uranus"></a></nav>
     <div id="fullpage">
         <div class="section space">
-            <div class="slide slide-one"><h2 id="discover">William Herschel discovered Uranus in 1781 and wanted to<br>call it Georgium Sidis after King George III.</h2>
+            <div class="slide slide-one"><h2 id="discover">William Herschel discovered Uranus in 1781 and wanted to<br>call it "Georgium Sidis" after King George III.</h2>
                 <img id="herschel" class="animated fadeInUp" src="images/herschel.png">
             </div>
             <div class="slide slide-two" id="rotation"><h2 id="spinning">Uranus spins the opposite direction to Earth.</h2>
@@ -48,11 +50,76 @@
             <img id="tilt" src="images/uranus.png">
             </div>
             <div class="slide slide-five" id="atmos"><h2 id="atmos-title">Uranus's atmosphere contains hydrogen , helium, ammonia and methane.</h2>
-                <img id="atmosphere" src="images/uranus.png">
-                        <img id="hydrogen" src="images/hydrogen.png">
-                        <img id="helium" src="images/helium.png">
-                        <img id="uranus-ammonia" src="images/ammonia.png">
-                        <img id="methane" src="images/methane.png">
+                <svg version="1.1" id="uranus-atmosphere-gas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" width="700px" viewBox="0 0 1151.021 571.429"
+                 enable-background="new 0 0 1151.021 571.429" xml:space="preserve">
+                <g id="atmosphere-methane">
+                    <text transform="matrix(1 0 0 1 954.958 516.5146)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Methane</text>
+                    <circle fill="#CCBBB1" cx="863.664" cy="503.789" r="47.871"/>
+                </g>
+                <g id="atmosphere-ammonia">
+                    <text transform="matrix(1 0 0 1 954.958 371.417)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Ammonia</text>
+                    <circle fill="#5575A3" cx="863.664" cy="360.527" r="47.871"/>
+                </g>
+                <g id="atmosphere-helium">
+                    <text transform="matrix(1 0 0 1 954.958 222.3975)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Helium</text>
+                    <circle fill="#458DAA" cx="863.664" cy="212.797" r="47.871"/>
+                </g>
+                <g id="atmosphere-hydrogen">
+                    <text transform="matrix(1 0 0 1 954.958 85.8682)" fill="#FFFFFF" font-family="'Muli'" font-size="37">Hydrogen</text>
+                    <circle fill="#4BAAE0" cx="863.664" cy="74.253" r="47.871"/>
+                </g>
+                <g id="atmosphere-uranus">
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.3677" y1="289.021" x2="556.3359" y2="289.021">
+                        <stop  offset="0" style="stop-color:#B1C1D1"/>
+                        <stop  offset="0.3092" style="stop-color:#6AAECE"/>
+                        <stop  offset="0.6383" style="stop-color:#64ADCE"/>
+                        <stop  offset="1" style="stop-color:#53AACE"/>
+                    </linearGradient>
+                    <path fill="url(#SVGID_1_)" d="M556.336,289.021c0-149.943-121.549-271.486-271.48-271.486
+                        c-149.939,0-271.488,121.543-271.488,271.486c0,149.929,121.549,271.485,271.488,271.485
+                        C434.787,560.507,556.336,438.95,556.336,289.021z"/>
+                    <g opacity="0.03">
+                        <defs>
+                            <path id="SVGID_2_" opacity="0.03" d="M339.183,289.021c0-149.943-121.548-271.486-271.482-271.486
+                                c-149.931,0-271.479,121.543-271.479,271.486c0,149.929,121.548,271.485,271.479,271.485
+                                C217.635,560.507,339.183,438.95,339.183,289.021z"/>
+                        </defs>
+                        <clipPath id="SVGID_3_">
+                            <use xlink:href="#SVGID_2_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_3_)" d="M556.336,289.021c0-149.943-121.549-271.486-271.48-271.486
+                            c-149.939,0-271.488,121.543-271.488,271.486c0,149.929,121.549,271.485,271.488,271.485
+                            C434.787,560.507,556.336,438.95,556.336,289.021z"/>
+                    </g>
+                    <g opacity="0.01">
+                        <defs>
+                            <path id="SVGID_4_" opacity="0.01" d="M198.482,289.021c0-149.943-121.553-271.486-271.487-271.486
+                                c-149.938,0-271.491,121.543-271.491,271.486c0,149.929,121.552,271.485,271.491,271.485
+                                C76.929,560.507,198.482,438.95,198.482,289.021z"/>
+                        </defs>
+                        <clipPath id="SVGID_5_">
+                            <use xlink:href="#SVGID_4_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_5_)" d="M556.797,289.021c0-149.943-121.549-271.486-271.479-271.486
+                            c-149.935,0-271.492,121.543-271.492,271.486c0,149.929,121.557,271.485,271.492,271.485
+                            C435.248,560.507,556.797,438.95,556.797,289.021z"/>
+                    </g>
+                    <g opacity="0.03">
+                        <defs>
+                            <path id="SVGID_6_" opacity="0.03" d="M480.306,289.021c0-149.943-121.546-271.486-271.478-271.486
+                                c-149.935,0-271.476,121.543-271.476,271.486c0,149.929,121.542,271.485,271.476,271.485
+                                C358.759,560.507,480.306,438.95,480.306,289.021z"/>
+                        </defs>
+                        <clipPath id="SVGID_7_">
+                            <use xlink:href="#SVGID_6_"  overflow="visible"/>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_7_)" d="M556.336,289.021c0-149.943-121.549-271.486-271.48-271.486
+                            c-149.939,0-271.488,121.543-271.488,271.486c0,149.929,121.549,271.485,271.488,271.485
+                            C434.787,560.507,556.336,438.95,556.336,289.021z"/>
+                    </g>
+                </g>
+                </svg>
             </div>
             <div class="slide slide-six" id="uranus-ice-rings"><h2 id="uranus-ice-rings-title">Not many people know, but Uranus has rings made of ice.</h2>
             <img id="uranus-rings" src="images/uranus-rings.png">
@@ -65,18 +132,28 @@
             <img id="umbriel" src="images/umbriel.png">
             <img id="ariel" src="images/ariel.png">
             <img id="miranda" src="images/miranda.png">
-                <div id="myModal" class="modal">
-                <!-- Modal content -->
-                    <div class="Miranda-content">
-                        <span class="close">&times;</span>
-                        <p>Miranda is a moon of Uranus</p>
-                    </div>
-            </div>
             </div>
             <div class="slide slide-nine" id="cold"><h2 id="cold-giant">Uranus is the coldest planet in the solar system.</h2>
                 <img id="uranusplanet" src="images/uranus-hat.png">
             </div>
         </div>
     </div>            
+    <script>
+        document.querySelector('#herschel').onclick = function(){swal({title: "Uranus Name",text: "Other suggested names were Neptune, Herschel and The Gerogian Planet."});}; 
+        document.querySelector('#tilt').onclick = function(){swal({title: "Uranus Tilt",text: "Many believe Uranus was hit by an object and caused it to spin on its side. Imagine Uranus rolling around the solar system!"});}; 
+        document.querySelector('#atmosphere-uranus').onclick = function(){swal({title: "Uranus",text: "Did you know that many scientists pronounce Uranus as Oo-ran-us or Ur-in-us?."});};
+        document.querySelector('#atmosphere-ammonia').onclick = function(){swal({title: "Ammonia",text: "Uranus has clouds of ammonia in its atmosphere. Ammonia is stuff that can be found in cleaning products."});};
+        document.querySelector('#atmosphere-helium').onclick = function(){swal({title: "Helium",text: "Uranus is primarily made of Helium which would make your voice sound funny!"});};
+        document.querySelector('#atmosphere-hydrogen').onclick = function(){swal({title: "Hydrogen",text: "Hydrogen is the lightest gas known and there is a lot of it on Uranus."});};
+        document.querySelector('#atmosphere-ammonia').onclick = function(){swal({title: "Ammonia",text: "Uranus has clouds of ammonia in its atmosphere. Ammonia is stuff that can be found in cleaning products."});};
+        document.querySelector('#atmosphere-methane').onclick = function(){swal({title: "Methane",text: "Uranus gets its colour due to the methane in its atmosphere. The gas absorbs red light and reflects blue light."});};
+        document.querySelector('#uranium').onclick = function(){swal({title: "Uranium",text: "Uranium is a very radioactive metal.", imageUrl:"images/uranium-image.png"});};
+        document.querySelector('img#miranda').onclick = function(){swal({title: "Miranda",text: "Named after the character from William Shakespeare's play The Tempest.", imageUrl:"images/miranda-real.png"});}; 
+        document.querySelector('#oberon').onclick = function(){swal({title: "Oberon",text: "Oberon is named after a character who appeared in Shakespeare's A Midsummer Night's Dream.", imageUrl:"images/oberon-real.jpg"});};
+        document.querySelector('#umbriel').onclick = function(){swal({title: "Umbriel",text: "Umbriel has the darkest surface of any of Uranus's moons. The moon is made of rock and mostly ice.", imageUrl:"images/umbriel-real.jpg"});};
+        document.querySelector('#ariel').onclick = function(){swal({title: "Ariel",text: "Ariels surface is full of craters and has large canyons, leaving lots of marks across the surface.", imageUrl:"images/ariel-real.png"});};
+        document.querySelector('#uranus-rings').onclick = function(){swal({title: "Uranus Rings",text: "Telescope photo of Uranus's rings. Most are hard to see because they are made of dark rock.", imageUrl:"images/uranus-rings-real.png"});};
+        document.querySelector('#uranusplanet').onclick = function(){swal({title: "Coldest Planet",text: "Uranus can reach temperatures as low as -224C which is more than cold enough to freeze your ice pops!"});};
+    </script>
 </body> 
 </html>
