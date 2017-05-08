@@ -152,7 +152,7 @@
             bigSectionsDestination: null,
 
             //Accessibility
-            keyboardScrolling: true,
+            keyboardScrolling: false,
             animateAnchor: true,
             recordHistory: true,
 

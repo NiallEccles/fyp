@@ -56,6 +56,27 @@ nav a:hover:after{
 }
 
 
+#about-page-link{
+	position: absolute;
+	color:white;
+	font-size: 18px;
+	z-index: 998;
+	margin-top:10px;
+	margin-left:20px;
+	color:black;
+	background-color:white;
+	padding:10px;
+	border-radius: 5px;
+	text-decoration-color: none;
+	text-decoration: none;
+}
+
+#about-page-link a:visited{
+	text-decoration-color: none;
+	text-decoration: none;
+	color:black;
+}
+
 #click-arrows{
 	position:relative;
 	top:70px;
@@ -121,7 +142,7 @@ nav a:hover:after{
 #Uranus{
 	font-family: 'Righteous', cursive;
 	color:#50a9cc;
-	font-size:54px;
+	font-size:44px;
 }
 
 #Uranus-Text{
@@ -130,7 +151,7 @@ nav a:hover:after{
 	position:relative;
 	right:0px;
 	bottom:35px;
-	font-size:32px;
+	font-size:25px;
 }
 
 .fp-tableCell{
@@ -176,6 +197,58 @@ nav a:hover:after{
 	background-image: url('images/stars4.png');
 }
 
+#about-text{
+	width:80%;
+	margin:auto;
+
+}
+
+#about-text h1{
+	text-align: center;
+}
+
+#about-text p{
+	font-size:22px;
+}
+
+#about-text:nth-child(3){
+	margin-bottom:40px;	
+}
+
+#about-text p:last-child{
+	text-align: center;
+}
+
+#about-text a{
+	text-decoration:underline;
+	text-decoration-color: white;
+	color:white; 
+}
+
+#back-button{
+	position: absolute;
+	padding: 0px 10px 10px 10px ;
+	background-color: white;
+	border-radius:5px;
+	color:black;
+	font-size: 18px;
+	right:10px;
+	z-index: 999;
+	top:50%;
+	bottom:50%;
+	height:20px;
+}
+
+#back-button a{
+	color:black;
+	text-decoration: none;
+}
+
+#logos{
+	width: 50%;
+	display: block;
+    margin: auto;
+}
 
 /* ---------------- MARS ANIMATIONS ---------------- */
 
@@ -458,6 +531,13 @@ nav a:hover:after{
 	position: relative;
 }
 
+#mars-moons{
+	width:600px;
+	position: relative;
+	margin-top:-1200px;
+	top:100px;
+}
+
 #phobos{
 	position:relative; 
 	width:35px; 
@@ -465,6 +545,10 @@ nav a:hover:after{
 	cursor: pointer;
 	top:-100px;
 	left:-300px;
+	border-radius: 50%;
+  -webkit-animation-name: pulsing;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 #phobos-text{
@@ -484,6 +568,11 @@ nav a:hover:after{
 	top:100px;
 	left:125px;
 	margin-top:-1200px;
+}
+
+#mars-info{
+	width:20px;
+	display: inline;
 }
 
 #martian-moons-title{
@@ -543,11 +632,7 @@ nav a:hover:after{
 	border-radius: 15px;
 	bottom:20px;
 	margin:auto;
-	opacity: 0;
-	-webkit-animation:flash 8s ease-in-out infinite;
-    -moz-animation:flash 8s ease-in-out infinite;
-    -o-animation:flash 8s ease-in-out infinite;
-    animation:flash 8s ease-in-out infinite;
+	opacity: 1;
 }
 
 @keyframes flash {
@@ -574,7 +659,7 @@ nav a:hover:after{
 	width:500px;
 	margin-top:-1200px;
 	position: relative;
-	top:70px; 
+	top:270px; 
 }
 
 #mars-planet-ring{
@@ -643,7 +728,52 @@ nav a:hover:after{
 
 #Rover_power{
 	cursor: pointer;
+	-webkit-animation:rover-move 60s ease-in-out infinite;
+    -moz-animation:rover-move 60s ease-in-out infinite;
+    -o-animation:rover-move 60s ease-in-out infinite;
+    animation:rover-move 60s ease-in-out infinite;
 }
+
+#power-information{
+	-webkit-animation:rover-move 60s ease-in-out infinite;
+    -moz-animation:rover-move 60s ease-in-out infinite;
+    -o-animation:rover-move 60s ease-in-out infinite;
+    animation:rover-move 60s ease-in-out infinite;
+}
+
+@keyframes rover-move{
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(1000px);}
+  100%{transform: translateX(0px);}
+}
+
+#Power_symbol{
+	-webkit-animation:rover-move-text 60s ease-in-out infinite;
+    -moz-animation:rover-move-text 60s ease-in-out infinite;
+    -o-animation:rover-move-text 60s ease-in-out infinite;
+    animation:rover-move-text 60s ease-in-out infinite;
+}
+
+#power-text{
+	-webkit-animation:rover-move-text 60s ease-in-out infinite;
+    -moz-animation:rover-move-text 60s ease-in-out infinite;
+    -o-animation:rover-move-text 60s ease-in-out infinite;
+    animation:rover-move-text 60s ease-in-out infinite;
+}
+
+@keyframes rover-move{
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(1000px);}
+  100%{transform: translateX(0px);}
+}
+
+@keyframes rover-move-text{
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(1000px);}
+  100%{transform: translateX(0px);}
+}
+
+
 
 #Water_scene{
 	width:100%;
@@ -665,6 +795,16 @@ nav a:hover:after{
 
 #mars-wind-rover{
 	cursor: pointer;
+	-webkit-animation:wind-push 3s ease-in-out infinite;
+    -moz-animation:wind-push 3s ease-in-out infinite;
+    -o-animation:wind-push 3s ease-in-out infinite;
+    animation:wind-push 3s ease-in-out infinite;
+}
+
+@keyframes wind-push{
+  0% {transform:translateX(0px);}
+  50% {transform:translateX(-30px);}
+  100%{transform:translateX(0px);}
 }
 
 #mars-wind-2,#mars-wind-3,#mars-wind-4{
@@ -676,9 +816,9 @@ nav a:hover:after{
 }
 
 @keyframes windy{
-  0% {opacity: 0; left:10px;}
-  50% {opacity: 1; left:20px}
-  100%{opacity: 0; left:30px}
+  0% {opacity: 0;transform:translateX(0px);}
+  50% {opacity: 1; transform:translateX(-30px);}
+  100%{opacity: 0; transform:translateX(-60px);}
 }
 
 #mars-wind-2{
@@ -728,22 +868,6 @@ nav a:hover:after{
 	left:0;
 	bottom:0;
 	right:0;
-}
-
-#Power_symbol{
-	opacity: 0;
-	-webkit-animation:beams 3s ease-in-out infinite;
-    -moz-animation:beams 3s ease-in-out infinite;
-    -o-animation:beams 3s ease-in-out infinite;
-    animation:beams 3s ease-in-out infinite;
-}
-
-#power-text{
-	opacity: 0;
-	-webkit-animation:beams 3s ease-in-out infinite;
-    -moz-animation:beams 3s ease-in-out infinite;
-    -o-animation:beams 3s ease-in-out infinite;
-    animation:beams 3s ease-in-out infinite;
 }
 
 #lander-scene{
@@ -869,8 +993,49 @@ nav a:hover:after{
 	position: relative;
 }
 
+#babylonians-scene{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index: 1;
+}
+
+#cloud-left{
+	-webkit-animation:cloud-left 10s ease-in-out infinite;
+    -moz-animation:cloud-left 10s ease-in-out infinite;
+    -o-animation:cloud-left 10s ease-in-out infinite;
+    animation:cloud-left 10s ease-in-out infinite;
+}
+
+@keyframes cloud-left {
+    0%   {transform: translateX(40px);}
+    25%	 {transform: translateX(-10px);}
+    50%  {transform: translateX(40px);} 
+    75%  {transform: translateX(-10px);}
+    100% {transform: translateX(40px);}
+}
+
+#cloud-right{
+	-webkit-animation:cloud-left 10s ease-in-out infinite;
+    -moz-animation:cloud-left 10s ease-in-out infinite;
+    -o-animation:cloud-left 10s ease-in-out infinite;
+    animation:cloud-left 10s ease-in-out infinite;
+}
+
+@keyframes cloud-right {
+    0%   {transform: translateX(-10px);}
+    25%	 {transform: translateX(10px);}
+    50%  {transform: translateX(-10px);} 
+    75%  {transform: translateX(10px);}
+    100% {transform: translateX(-10px);}
+}
+
 #babylonians > .fp-tableCell{
-	background-image: url('images/babylonians1.png');
+	
 	background-size: 100%;
 	background-repeat: none;
 	background-position: bottom;
@@ -880,14 +1045,10 @@ nav a:hover:after{
 #planet-discovery{
 	position: relative;
 	top:-225px;
+	z-index: 2;
 }
 
-img#baby-jup{
-	position:relative;
-	margin-top:-1200px;
-	width:100px;
-	left:150px;
-	top:-150px;
+#baby-jupiter{
 	animation-delay: .5s;
 	animation-duration: 1s;
 	cursor: pointer;
@@ -907,23 +1068,26 @@ img#baby-jup{
 	margin-top:-2250px;
 }
 
+/*
 #jupiter-speed:hover{
 	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
      transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
  }
-
+*/
 #saturn-speed{
 	position:relative;
 	top:200px;
 	margin-top:-2250px;
 }
 
+/*
 #saturn-speed:hover{
 	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
      transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
  }
+*/
 
 #uranus-speed{
 	position:relative;
@@ -931,11 +1095,13 @@ img#baby-jup{
 	margin-top:-2250px;
 }
 
+/*
 #uranus-speed:hover{
 	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
      transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
  }
+*/
 
 #neptune-speed{
 	position:relative;
@@ -943,11 +1109,13 @@ img#baby-jup{
 	margin-top:-2250px;
 }
 
+/*
 #neptune-speed:hover{
 	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
      transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
  }
+*/
 
 #largest{
 	position: relative;
@@ -966,9 +1134,23 @@ img#baby-jup{
 }
 
 #large-jupiter:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
+}
+
+#large-jupiter-info{
+	position: relative;
+	width: 25px;
+	left:225px;
+	top:-200px;
+	cursor: pointer;
+}
+
+#earth-info{
+	position: relative;
+	width: 25px;
+	top:50px;
+	left:45px;
+	cursor: pointer;
 }
 
 #earth-size{
@@ -979,8 +1161,6 @@ img#baby-jup{
 }
 
 #earth-size:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
      cursor: pointer;
 }
 
@@ -1094,21 +1274,11 @@ img#baby-jup{
 	cursor: pointer;
 }
 
-#ganymede:hover{
-	-webkit-transform: scale3d(1.2, 1.2, 1);
-     transform: scale3d(1.2, 1.2, 1);
-}
-
 #mercury-moon{
 	margin-top: -3350px;
 	position: relative;
 	top:150px;
 	cursor: pointer;
-}
-
-#mercury-moon:hover{
-	-webkit-transform: scale3d(1.2, 1.2, 1);
-     transform: scale3d(1.2, 1.2, 1);
 }
 
 #callisto{
@@ -1118,21 +1288,11 @@ img#baby-jup{
 	cursor: pointer;
 }
 
-#callisto:hover{
-	-webkit-transform: scale3d(1.2, 1.2, 1);
-     transform: scale3d(1.2, 1.2, 1);
-}
-
 #io{
 	margin-top: -3350px;
 	position: relative;
 	top:150px;
 	cursor: pointer;
-}
-
-#io:hover{
-	-webkit-transform: scale3d(1.2, 1.2, 1);
-     transform: scale3d(1.2, 1.2, 1);
 }
 
 #europa{
@@ -1142,31 +1302,48 @@ img#baby-jup{
 	cursor: pointer;
 }
 
-#europa:hover{
-	-webkit-transform: scale3d(1.2, 1.2, 1);
-     transform: scale3d(1.2, 1.2, 1);
-}
-
 #jupiter-giant-title{
 	position: relative;
 	z-index: 997;
 }
 
-#jupiter-giant > .fp-tableCell{
-	background-image: url('images/jupiter-red-spot.png');
-	background-size: 100%;
-	background-repeat: none;
-	background-position: bottom;
-	background-color:rgba(0,0,0,0); 
+
+#jupiter-giant{
+	position: relative;
 }
 
-#red-spot{
-	position: relative; 
-	width:300px; 
-	top:200px;
-	z-index: 0;
+#red-spot-info{
 	cursor: pointer;
+	-webkit-animation:storm 7s ease-in-out infinite;
+    -moz-animation:storm 7s ease-in-out infinite;
+    -o-animation:storm 7s ease-in-out infinite;
+    animation:storm 7s ease-in-out infinite;
 }
+
+@keyframes storm {
+    0%   {transform: translateX(0px);}
+    50%   {transform: translateX(-100px);}
+    100% {transform: translateX(0px);}
+}
+
+#jupiter-red-spot{
+	cursor: pointer;
+	-webkit-animation:storm 7s ease-in-out infinite;
+    -moz-animation:storm 7s ease-in-out infinite;
+    -o-animation:storm 7s ease-in-out infinite;
+    animation:storm 7s ease-in-out infinite;
+}
+
+#jupiters-red-spot-scene{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
 
 #comet{
 	position:relative;
@@ -1280,7 +1457,6 @@ img#baby-jup{
     -moz-animation:junospin 17s linear infinite;
     -o-animation:junospin 17s linear infinite;
     animation:junospin 17s linear infinite;
-    cursor: pointer;
     transform-origin: 50% 60%;
 }
 
@@ -1298,6 +1474,18 @@ img#baby-jup{
 	right:250px;
 	top:250px;
 	width:200px;
+}
+
+#juno-info{
+	position: absolute;
+	width: 20px;
+	right:340px;
+	top:225px;
+	cursor: pointer;
+}
+
+#juno-jupiter{
+	cursor: pointer;
 }
 
 
@@ -1320,33 +1508,38 @@ img#baby-jup{
 	right:0;
 }
 
-#ammonia-ice-layer{
-	cursor: pointer;
-}
-
-#ammonium-ice-layer{
-	cursor: pointer;
-}
-
-#water-ice-layer{
-	cursor: pointer;
-}
-
 #saturn-eye{
 	position: relative;
 }
 
 #saturn-eye > .fp-tableCell{
-	background-image: url('images/saturn-first-01.png');
-	background-size: 100%;
-	background-repeat: none;
-	background-position: bottom;
-	background-color:rgba(0,0,0,0);
+	background-image: none;
 }
+
+#saturn-first{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	z-index: 0;
+}
+
+#saturn-first-image{
+	cursor: pointer;
+}
+
+#saturn-first-information{
+	cursor: pointer;
+}
+
 
 #saturn-eye-title{
 	position: relative;
 	top:-220px;
+	z-index: 1;
 }
 
 #saturn-saturn-eye{
@@ -1429,6 +1622,12 @@ img#baby-jup{
 	top:500px;
 }
 
+#saturn-energy-information{
+	transform: scaleX(10px);
+	transform: scaleY(10px)
+	transform:scale(100,100,100);
+}
+
 #ringed-planet{
 	position: relative;
 }
@@ -1436,6 +1635,15 @@ img#baby-jup{
 #ringed-planet-title{
 	position: relative;
 	top:-220px;
+}
+
+#rings-information{
+	position: relative;
+	top:-175px;
+	width:40px;
+	margin:auto;
+	left:375px;
+	cursor: pointer;
 }
 
 #ringed{
@@ -1493,9 +1701,100 @@ img#baby-jup{
 }
 
 
+#saturn-moons-slide{
+	position: relative;
+}
+
+#saturn-moons-slide-title{
+	position: relative;
+	top:-220px;
+
+}
+
+#moons-saturn{
+	-webkit-animation:skew3 5s ease-in-out infinite;
+    -moz-animation:skew3 5s ease-in-out infinite;
+    -o-animation:skew3 5s ease-in-out infinite;
+    animation:skew3 5s ease-in-out infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes skew3 {
+    0%   {transform: rotate(-5deg);}
+    25%	 {transform: rotate(0deg);}
+    50%  {transform: rotate(-5deg);} 
+    75%  {transform: rotate(0deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+#saturn-moons-scene{
+	position: relative;
+	width:800px;
+	margin-top:-1200px;
+	top:200px;
+}
+
+#sat-moon1,#sat-moon2,#sat-moon3,#sat-moon4,#sat-moon5,#sat-moon6,#sat-moon7,#sat-moon8,#sat-moon9,#sat-moon10{
+	-webkit-animation:moonglint 2s ease-in-out infinite;
+    -moz-animation:moonglint 2s ease-in-out infinite;
+    -o-animation:moonglint 2s ease-in-out infinite;
+    animation:moonglint 2s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes moonglint {
+   0%{opacity: 0;}
+   50%{opacity:1;}
+   100%{opacity:0;}
+}
+
+
+#sat-moon1{
+	animation-delay: 0.2s;
+}
+
+#sat-moon2{
+	animation-delay: 1s;
+}
+
+#sat-moon3{
+	animation-delay: 0.3s;
+}
+
+#sat-moon4{
+	animation-delay: 0.7s;
+}
+
+#sat-moon5{
+	animation-delay: 0.2s;
+}
+
+#sat-moon6{
+	animation-delay: 1s;
+}
+
+#sat-moon7{
+	animation-delay: 0.5s;
+}
+
+#sat-moon8{
+	animation-delay: 0.3s;
+}
+
+#sat-moon9{
+	animation-delay: 0.7s;
+}
+
+#sat-moon10{
+	animation-delay: 0.2s;
+}
+
+
+
 #saturn-winds{
 	position: relative;
 }
+
 
 #saturn-winds-title{
 	position: relative;
@@ -1503,8 +1802,13 @@ img#baby-jup{
 }
 
 #saturn-winds > .fp-tableCell{
-	background-color:#7f7e60;
 	background-image:none;
+	background-repeat: repeat-x repeat-y;
+}
+
+#saturn-winds > .fp-tableCell{
+	background-image: url("images/wind-background.png");
+	background-repeat: repeat-x repeat-y;
 }
 
 #balloon{
@@ -1573,9 +1877,29 @@ img#baby-jup{
     100% {height:235px;}
 }
 
+#saturn-spin-information{
+	position: relative;
+	width: 30px;
+	left:375px;
+	top:-200px;
+	cursor: pointer;
+}
+
 #temp{
 	position: relative;
 }
+
+#temp > .fp-tableCell{
+	background-image:none;
+	background-repeat: repeat-x repeat-y;
+}
+
+#temp > .fp-tableCell{
+	background-image: url("images/heating-background.png");
+	background-repeat: repeat-x repeat-y;
+}
+
+vfdhvdjfhbvdfhbvhafbvaljfhbvajlhbfahvbfjladbvdkjakdjeafisiunvhkesbgkfyubrshmfgrsgfhabfmfjnvkjhfugislvhjf,hsbvfilaieufhabrv
 
 #temp > .fp-tableCell{
 	background-color:#5e4d3a;
@@ -1587,6 +1911,7 @@ img#baby-jup{
 	position: relative;
 	top:-200px;
 }
+
 
 #astronaut{
 	position: relative;
@@ -1691,7 +2016,13 @@ g#cassini-probe{
 	cursor: pointer;
 }
 
+#cassini-information{
+	cursor: pointer;
+}
 
+#cassini-saturn-information{
+	cursor: pointer;
+}
 
 #discover{
 	position: relative;
@@ -1703,6 +2034,12 @@ g#cassini-probe{
 	margin-top:-1200px; 
 	top:150px;
 	left:0px;
+	cursor: pointer;
+}
+
+#herschel-info{
+	position: relative;
+	width:30px;
 	cursor: pointer;
 }
 
@@ -1726,7 +2063,7 @@ g#cassini-probe{
 	border-radius: 500px;
 	background-image: url("images/earthbg.png");
 	background-repeat: repeat-x;
-	background-position: top; 
+	background-position: top;
 	animation: animatedEarthBackground 20s linear infinite;
 }
 
@@ -1836,6 +2173,13 @@ g#cassini-probe{
     100% {transform: rotate(0deg);}
 }
 
+#tilt-information{
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+	left:-60px;
+}
+
 #atmos{
 	position: relative;
 }
@@ -1872,9 +2216,8 @@ g#cassini-probe{
  #uranus-atmosphere-gas{
 	position: relative;
 	margin-top:-1200px;
-	top:150px;
+	top:250px;
 }
-
 
 #uranus-ice-rings{
 	position: relative;
@@ -1905,6 +2248,12 @@ g#cassini-probe{
     100% {transform: rotate(0deg);}
 }
 
+#uranus-rings-information{
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+}
+
 #uranium-uranus{
 	position:relative; 
 }
@@ -1919,6 +2268,12 @@ g#cassini-probe{
 	margin-top: -1200px;
 	top:200px;
 	width:450px;
+	cursor: pointer;
+}
+
+#uranium-information{
+	position: relative;
+	width: 30px;
 	cursor: pointer;
 }
 
@@ -1949,52 +2304,33 @@ g#cassini-probe{
 
 
 #oberon{
-	top:100px;
+	top:150px;
 	margin-top: -1250px;
 	position: relative;
 	cursor: pointer;
 }
-
-#oberon:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
- }
 
 #umbriel{
-	top:100px;
+	top:150px;
 	margin-top: -1250px;
 	position: relative;
 	cursor: pointer;
 }
 
-#umbriel:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
- }
 
 #ariel{
-	top:100px;
+	top:150px;
 	margin-top: -1250px;
 	position: relative;
 	cursor: pointer;
 }
 
-#ariel:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
- }
-
 #miranda{
-	top:100px;
+	top:150px;
 	margin-top: -1250px;
 	position: relative;
+	cursor: pointer;
 }
-
-#miranda:hover{
-	-webkit-transform: scale3d(1.1, 1.1, 1)!important;
-     transform: scale3d(1.1, 1.1, 1)!important;
-     cursor: pointer;
- }
 
 .section #uranus-moons > .fp-tableCell img {
 	transform: translateY(800px);
@@ -2025,6 +2361,12 @@ g#cassini-probe{
 	margin-top: -1000px;
 	top:160px;
 	animation: shiver 1s linear infinite;
+	cursor: pointer;
+}
+
+#uranusplanet-information{
+	position: relative;
+	width: 30px;
 	cursor: pointer;
 }
 
@@ -2072,4 +2414,14 @@ g#cassini-probe{
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.test{
+	width:200px;
+}
+
+@-webkit-keyframes pulsing {
+  from { background-color: #e67e22; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
 }
