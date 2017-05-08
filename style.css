@@ -77,6 +77,24 @@ nav a:hover:after{
 	color:black;
 }
 
+#about-page-link a:link{
+	text-decoration-color: none;
+	text-decoration: none;
+	color:black;
+}
+
+#about-page-link a:hover{
+	text-decoration-color: none;
+	text-decoration: none;
+	color:black;
+}
+
+#about-page-link a:active{
+	text-decoration-color: none;
+	text-decoration: none;
+	color:black;
+}
+
 #click-arrows{
 	position:relative;
 	top:70px;
