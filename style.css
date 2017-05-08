@@ -245,7 +245,7 @@ nav a:hover:after{
 
 #back-button{
 	position: absolute;
-	padding: 0px 10px 10px 10px ;
+	padding: 10px 10px 20px 10px ;
 	background-color: white;
 	border-radius:5px;
 	color:black;
@@ -1281,42 +1281,46 @@ nav a:hover:after{
 	position: relative;
 }
 
+#jup-moons img{
+	width:225px;
+}
+
 #moons-title{
 	top:-225px;
 }
 
 #ganymede{
-	margin-top: -3350px;
+	margin-top: -1200px;
 	position: relative;
-	top:150px;
+	top:125px;
 	cursor: pointer;
 }
 
 #mercury-moon{
-	margin-top: -3350px;
+	margin-top: -1200px;
 	position: relative;
-	top:150px;
+	top:125px;
 	cursor: pointer;
 }
 
 #callisto{
-	margin-top: -3350px;
+	margin-top: -1200px;
 	position: relative;
-	top:150px;
+	top:125px;
 	cursor: pointer;
 }
 
 #io{
-	margin-top: -3350px;
+	margin-top: -1200px;
 	position: relative;
-	top:150px;
+	top:125px;
 	cursor: pointer;
 }
 
 #europa{
 	margin-top: -3350px;
 	position: relative;
-	top:150px;
+	top:125px;
 	cursor: pointer;
 }
 
@@ -2313,6 +2317,10 @@ g#cassini-probe{
 
 #uranus-moons{
 	position: relative;
+}
+
+#uranus-moons img{
+	width:250px;
 }
 
 #uranus-moons-title{
