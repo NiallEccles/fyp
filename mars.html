@@ -179,7 +179,7 @@
                     </g>
                     <rect x="636.083" y="-31.756" fill="none" width="7.252" height="18.335"/>
                     
-                        <text id="i-information" transform="matrix(1 0 0 1 636.0825 -16.1621)" fill="#FFFFFF" font-family="'Muli-Bold'" font-size="21.9198">i</text>
+                        <text id="i-information" transform="matrix(1 0 0 1 636.0825 -16.1621)" fill="#FFFFFF" font-family="'Muli'" font-size="21.9198">i</text>
                 </g>
                 <g id="deimos">
                     <circle fill="#E9DD58" cx="1189.8" cy="158.765" r="35.24"/>
@@ -198,7 +198,7 @@
                     </g>
                     <rect x="75.525" y="53.702" fill="none" width="7.252" height="18.336"/>
                     
-                        <text id="i-information_1_" transform="matrix(1 0 0 1 75.5249 69.2959)" fill="#FFFFFF" font-family="'Muli-Bold'" font-size="21.9198">i</text>
+                        <text id="i-information_1_" transform="matrix(1 0 0 1 75.5249 69.2959)" fill="#FFFFFF" font-family="'Muli'" font-size="21.9198">i</text>
                 </g>
                 <g id="phobos">
                     <circle fill="#C58D41" cx="79.649" cy="158.304" r="42.157"/>
@@ -222,7 +222,7 @@
                     </g>
                     <rect x="1186.202" y="53.702" fill="none" width="7.253" height="18.336"/>
                     
-                        <text id="i-information_2_" transform="matrix(1 0 0 1 1186.2021 69.2959)" fill="#FFFFFF" font-family="'Muli-Bold'" font-size="21.9198">i</text>
+                        <text id="i-information_2_" transform="matrix(1 0 0 1 1186.2021 69.2959)" fill="#FFFFFF" font-family="'Muli'" font-size="21.9198">i</text>
                 </g>
                 <text transform="matrix(1 0 0 1 28.5635 244.5313)" fill="#FFFFFF" font-family="'Muli" font-size="28">Phobos</text>
                 <text transform="matrix(1 0 0 1 1142.5635 244.5313)" fill="#FFFFFF" font-family="'Muli" font-size="28">Deimos</text>
@@ -1470,7 +1470,7 @@
                     <rect x="321.826" y="855.604" opacity="0.5" fill="#212125" width="23.732" height="10.957"/>
                     <rect x="321.826" y="841.405" opacity="0.5" fill="#212125" width="23.732" height="10.958"/>
                     <rect x="321.826" y="827.741" opacity="0.5" fill="#212125" width="23.732" height="10.957"/>
-                    <g id="i-circle">
+                    <g id="lander-information">
                         <path fill="#333333" d="M1404.121,513.974c-14.441,0-26.189-11.749-26.189-26.189s11.748-26.189,26.189-26.189
                             c14.439,0,26.188,11.749,26.188,26.189S1418.561,513.974,1404.121,513.974z"/>
                         <path fill="#FFFFFF" d="M1404.121,462.096c14.188,0,25.688,11.501,25.688,25.689s-11.5,25.689-25.688,25.689
@@ -1640,9 +1640,12 @@
         document.querySelector('#mars-and-moons').onclick = function(){swal({title: "Mars",text: "1 day on Mars is 24 hours and 37 minutes. A year is 687 Earth days.", imageUrl:"images/mars-render.png"});};
         document.querySelector('#mars-planet-ring').onclick = function(){swal({title: "Phobos and Deimos",text: "Many scientists believe Phobos and Deimos were part of a bigger group of rocky objects."});};
         document.querySelector('#Rover_power').onclick = function(){swal({title: "Rover Power",text: "The Curiosity rover on Mars uses solar panels and also uses the element Plutonium to power its systems.", imageUrl:"images/mars-rover-real.png"});};
+        document.querySelector('#power-information').onclick = function(){swal({title: "Rover Power",text: "The Curiosity rover on Mars uses solar panels and also uses the element Plutonium to power its systems.", imageUrl:"images/mars-rover-real.png"});};
         document.querySelector('#mars-wind-rover').onclick = function(){swal({title: "Mars Dust Storms",text: "Dust can stop the rovers sensors from working correctly. Mars has a lot of loose rock and dust on its surface.", imageUrl:"images/mars-terrain.png"});};
         document.querySelector('#water-ice').onclick = function(){swal({title: "Mars Ice Caps",text: "Ice can be found on Mars north and south pole.", imageUrl:"images/mars-ice-caps.png"});};
+        document.querySelector('#water-information').onclick = function(){swal({title: "Mars Ice Caps",text: "Ice can be found on Mars north and south pole.", imageUrl:"images/mars-ice-caps.png"});};
         document.querySelector('#lander').onclick = function(){swal({title: "Mars 2 Lander",text: "The Mars 2 Lander was the first man-made object to reach the surface of Mars. However it was destroyed when it crashed into the surface.", imageUrl:"images/mars2-lander.png"});};
+        document.querySelector('#lander-information').onclick = function(){swal({title: "Mars 2 Lander",text: "The Mars 2 Lander was the first man-made object to reach the surface of Mars. However it was destroyed when it crashed into the surface.", imageUrl:"images/mars2-lander.png"});};
         document.querySelector('#empire_state_building').onclick = function(){swal({title: "Empire State Building",text: "The Empire State Building is a building in New York and has 103 floors.", imageUrl:"images/empire-state-building.jpg"});};
         document.querySelector('#mount_everest').onclick = function(){swal({title: "Mount Everest",text: "Mount Everest is the tallest mountain on Earth and is located in Nepal.", imageUrl:"images/everest.png"});};
         document.querySelector('#olympus_mons').onclick = function(){swal({title: "Olympus Mons",text: "Olympus Mons is a shield volcano and could still be active.", imageUrl:"images/olympus-mons.png"});};

@@ -122,7 +122,7 @@ nav a:hover:after{
 	color:#ef4a3e;
 	position:relative;
 	right:3px;
-	bottom:50px;
+	bottom:40px;
 	font-size:18px;
 }
 
@@ -133,11 +133,11 @@ nav a:hover:after{
 }
 
 #Jupiter-Text{
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Squada One', cursive;
 	color:#f8e6bf;
 	position:relative;
 	right:2px;
-	bottom:46px;
+	bottom:40px;
 	font-size:22px;
 }
 
@@ -757,6 +757,7 @@ nav a:hover:after{
     -moz-animation:rover-move 60s ease-in-out infinite;
     -o-animation:rover-move 60s ease-in-out infinite;
     animation:rover-move 60s ease-in-out infinite;
+    cursor: pointer;
 }
 
 @keyframes rover-move{
@@ -809,6 +810,10 @@ nav a:hover:after{
     -moz-animation:beams 3s ease-in-out infinite;
     -o-animation:beams 3s ease-in-out infinite;
     animation:beams 3s ease-in-out infinite;
+}
+
+#water-information{
+	cursor: pointer;
 }
 
 #mars-wind-rover{
@@ -899,6 +904,10 @@ nav a:hover:after{
 }
 
 #lander{
+	cursor: pointer;
+}
+
+#lander-information{
 	cursor: pointer;
 }
 
@@ -1186,15 +1195,21 @@ nav a:hover:after{
 	position:relative;
 }
 
+#asteroid-field-title{
+	position: relative;
+	top:-220px;
+}
+
 .asteroids{
 	position:relative;
 }
 
 #asteroid1{
-	position:absolute;
+	position:relative;
 	width:65px;
-	top:250px;
+	top:0px;
 	left:200px;
+	margin-top:-1200px;
 	-webkit-animation:rotate 4s linear infinite;
     -moz-animation:rotate 4s linear infinite;
     -o-animation:rotate 4s linear infinite;
@@ -1202,29 +1217,34 @@ nav a:hover:after{
 }
 
 #asteroid2{
-	position:absolute;
-	top:350px;
-	right:200px;
+	position:relative;
+	top:250px;
+	left:100px;
+	margin-top:-1200px;
 	-webkit-animation:movementone 10s ease-in-out infinite;
     -moz-animation:movementone 10s ease-in-out infinite;
     -o-animation:movementone 10s ease-in-out infinite;
     animation:movementone 10s ease-in-out infinite;
+
 }
 
 #asteroid3{
-	position:absolute;
+	position:relative;
 	top:150px;
-	left:550px;
+	left:150px;
+	margin-top:-1200px;
 	-webkit-animation:rotate 17s linear infinite;
     -moz-animation:rotate 17s linear infinite;
     -o-animation:rotate 17s linear infinite;
     animation:rotate 17s linear infinite;
+
 }
 
 #asteroid4{
-	position:absolute;
+	position:relative;
 	top:350px;
 	left:350px;
+	margin-top:-1200px;
 	-webkit-animation:movementtwo 17s ease-in-out infinite;
     -moz-animation:movementtwo 17s ease-in-out infinite;
     -o-animation:movementtwo 17s ease-in-out infinite;
@@ -1232,9 +1252,10 @@ nav a:hover:after{
 }
 
 #asteroid5{
-	position:absolute;
-	top:550px;
-	right:550px;
+	position:relative;
+	top:150px;
+	left:200px;
+	margin-top:-1200px;
 	-webkit-animation:movementthree 17s ease-in-out infinite;
     -moz-animation:movementthree 17s ease-in-out infinite;
     -o-animation:movementthree 17s ease-in-out infinite;
@@ -1260,9 +1281,9 @@ nav a:hover:after{
 }
 
 @keyframes movementone {
-    0%   {right:200px;}
-    50%  {right:250px;}
-    100% {right:200px;}
+    0%   {left:-100px;}
+    50%  {left:100px;}
+    100% {left:-100px;}
 }
 
 @keyframes movementtwo {
@@ -1272,10 +1293,11 @@ nav a:hover:after{
 }
 
 @keyframes movementthree {
-    0%   {left:550px; top:550px;}
-    50%  {left:450px; top:450px;}
-    100% {left:550px; top:550px;}
+    0%   {left:0px; top:0px;}
+    50%  {left:250px; top:250px;}
+    100% {left:0px; top:0px;}
 }
+
 
 #jup-moons{
 	position: relative;
@@ -1371,10 +1393,15 @@ nav a:hover:after{
 	position:relative;
 }
 
+#comet-title{
+	position: relative;
+	top:-220px;
+}
+
 #hubble{
-	position: absolute;
-	left:100px;
-	width:350px;
+	position: relative;
+	width:300px;
+	margin-top: -1200px;
 	-webkit-animation:hubblewobble 17s ease-in-out infinite;
     -moz-animation:hubblewobble 17s ease-in-out infinite;
     -o-animation:hubblewobble 17s ease-in-out infinite;
@@ -1383,37 +1410,39 @@ nav a:hover:after{
 }
 
 #jupiter-hubble{
-	position:absolute;
+	position:relative;
 	width:350px;
-	right:200px;
-	top:150px;
+	top:100px;
+	margin-top: -1200px;
 	cursor: pointer;
 }
 
 #comet-impact{
-	position:absolute;
+	position:relative;
 	width:35px;
-	right:100px;
-	top:300px;
-	-webkit-animation:impact 3s linear infinite;
+	left:400px;
+    z-index: 999;
+    margin-top: -1200px;
+    -webkit-animation:impact 3s linear infinite;
     -moz-animation:impact 3s linear infinite;
     -o-animation:impact 3s linear infinite;
     animation:impact 3s linear infinite;
-    z-index: 999;
 }
 
+
+
 @keyframes impact {
-    0%   {opacity:1; right:100px; top:300px;}
-    25%	 {opacity:0.7; right:150px; top:300px;}
-    50%  {opacity:0.5; right:225px; top:300px;} 
-    75%  {opacity:0.3; right:300px; top:300px;}
-    100% {opacity:0; right:325px; top:300px;}
+    0%   {opacity:1; left:400px;}
+    25%	 {opacity:0.7; left:350px;}
+    50%  {opacity:0.5; left:335px; } 
+    75%  {opacity:0.3; left:300px; }
+    100% {opacity:0; left:275px;}
 }
 
 @keyframes hubblewobble {
-    0%   {top:250px;}
-    50%  {top:350px;}
-    100% {top:250px;}
+    0%   {top:0px;}
+    50%  {top:100px;}
+    100% {top:0px;}
 }
 
 #jupiter-magnet_scene{
@@ -1863,8 +1892,8 @@ nav a:hover:after{
 #saturn-balloon{
 	position: relative;
 	margin-top:-1200px;
-	top:350px;
-	width:700px;
+	top:175px;
+	width:500px;
 	cursor: pointer;
 }
 
@@ -1937,9 +1966,9 @@ vfdhvdjfhbvdfhbvhafbvaljfhbvajlhbfahvbfjladbvdkjakdjeafisiunvhkesbgkfyubrshmfgrs
 
 #astronaut{
 	position: relative;
-	width:250px;
+	width:200px;
 	margin-top:-1200px;
-	top:300px;
+	top:175px;
 	-webkit-animation:bobbing 5s ease-in-out infinite;
     -moz-animation:bobbing 5s ease-in-out infinite;
     -o-animation:bobbing 5s ease-in-out infinite;
@@ -2451,3 +2480,4 @@ g#cassini-probe{
   50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
   to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
 }
+
