@@ -2,9 +2,9 @@
 
 A website that teaches children about some of the planets in our solar system through illustration and animation
 
-## Getting Started
+## About
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This website was built as part of the [Creative Digital Media](www.creativedigitalmedia.ie/) Course at the [Institute of Technology Blanchardstown](www.itb.ie).
 
 
 ## Built With
